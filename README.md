@@ -1,13 +1,14 @@
 # AVN_AUTOTEST_FRAMEWORK 
-	·1，安装atx
+	1，安装atx
 	pip3 install atx
-	·2，安装uiautomator2
+	
+	2，安装uiautomator2
 	pip3 install --pre --upgrade uiautomator2
 	
-	·3，初始化操作
+	3，初始化操作
 	python3 -m uiautomator2 init
 	
-	·4,启动捕捉工具
+	4,启动捕捉工具
 	python3 -m weditor
 
 
@@ -20,29 +21,38 @@
 	python-uiautomator2封装了谷歌自带的uiautomator2测试框架，提供便利的python接口。他允许测试人员直接在PC上编写Python的测试代码，操作手机应用，	完成自动化，大大提高了自动化代码编写的效率。
 	
 ## 工作原理
+	
 	python-uiautomator2主要分为两个部分，python客户端，移动设备
 	python端: 运行脚本，并向移动设备发送HTTP请求
 	移动设备：移动设备上运行了封装了uiautomator2的HTTP服务，解析收到的请求，并转化成uiautomator2的代码。
+	
 ##  整个过程
+	
 	在移动设备上安装atx-agent(守护进程), 随后atx-agent启动uiautomator2服务(默认7912端口)进行监听
 	在PC上编写测试脚本并执行（相当于发送HTTP请求到移动设备的server端）
 	移动设备通过WIFI或USB接收到PC上发来的HTTP请求，执行制定的操作
+	
 ##  安装工具
 	Python2或者Python3均可。(也可以尝试使用Android上Python客户端：QPython)
 
-## 移动设备
-## 环境搭建
+
+# 环境搭建
 ## 安装adb
 	如命令行可以执行adb devices，则跳过此步骤
 	从谷歌官网下载Android Platform Tools https://developer.android.com/studio/releases/platform-tools.html，解压，并加包含adb.exe的目录加入到系统的PATH中。
+	
 ## 安装python-uiautomator2
+
 	pip install --pre -U uiautomator2
+	
 ## 设备安装atx-agent
+	
 	首先设备连接到PC，并能够adb devices发现该设备。
 	从github下载atx-agent文件，并推送到手机。在手机上安装包名为`com.github.uiautomator`的apk
 	$ python3 -m uiautomator2 init
 	$ success
 	最后提示success，代表atx-agent初始化成功。
+	
 ## 应用及操作
 
 	调用uiautomator2的过程
@@ -72,6 +82,7 @@
 	首先运行python -m weditor，之后浏览器会自动打开一个网页 http://atx.open.netease.com （注：这个网址仅提供一个前端，而python -mweditor这个命令则本地开放了HTTP的接口，前端去跟本地的服务去通信）输入框中可以写设备的IP或者设备的Serial（序列号），跟上面提到的配置手机设备参数用法一致。之后点击Connect，如果一切正常就会出现一个绿色的叶子。页面刷新时，点击蓝色的Reload按钮重新刷新。
 
 ## 定位方式
+	
 	ResourceId定位: d(resourceId="com.smartisanos.clock:id/text_stopwatch").click()
 	Text定位 d(text="秒表").click()
 	Description定位 d(description="..").click()
@@ -117,6 +128,7 @@
 
 
 ## HTMLTestRunner修改成Python3版本
+	
 	修改前：HTMLTestRunner下载地址：http://tungwaiyip.info/software/HTMLTestRunner.html
 			BSTestRunner     下载地址：https://github.com/easonhan007/HTMLTestRunner
 
