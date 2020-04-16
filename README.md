@@ -1,0 +1,3 @@
+# AVN_AUTOTEST_FRAMEWORK
+
+主要使用Python、Uiautomator2、Unittest完成基于android的测试框架，实现case与代码脱离，代码维护页面接口逻辑，case调用页面接口，case与代码之间使用python映射找到对应类及方法，使用优化后的HTMLTestRunnerCN.py生成测试报告，后续继续实现excle统计测试结果。
