@@ -1,0 +1,1397 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="EN" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>india_D90_settingsPage module &mdash; Autotest 1.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="india_D90_userManual module" href="india_D90_userManual.html" />
+    <link rel="prev" title="india_D90_radioPage module" href="india_D90_radioPage.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Autotest
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">page</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="BasePage.html">BasePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configparserHandler.html">configparserHandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="factoryReset.html">factoryReset module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="homePage.html">homePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="htmlParser.html">htmlParser module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_btPhonePage.html">india_D90_btPhonePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_gaanaPage.html">india_D90_gaanaPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_homePage.html">india_D90_homePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_morePage.html">india_D90_morePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_musicPage.html">india_D90_musicPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_radioPage.html">india_D90_radioPage module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">india_D90_settingsPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_userManual.html">india_D90_userManual module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_voice.html">india_D90_voice module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_weatherPage.html">india_D90_weatherPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="publicMethod.html">publicMethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_accountPage.html">thailand_AS23P_accountPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_batteryPage.html">thailand_AS23P_batteryPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_btphonePage.html">thailand_AS23P_btphonePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_callCentrePage.html">thailand_AS23P_callCentrePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_carphonePage.html">thailand_AS23P_carphonePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_folderPage.html">thailand_AS23P_folderPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_homePage.html">thailand_AS23P_homePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_inboxPage.html">thailand_AS23P_inboxPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_lifeStylePage.html">thailand_AS23P_lifeStylePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_mediaPage.html">thailand_AS23P_mediaPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_passionServicePage.html">thailand_AS23P_passionServicePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_radioPage.html">thailand_AS23P_radioPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_settingPage.html">thailand_AS23P_settingPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_translate.html">thailand_AS23P_translate module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Autotest</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">page</a> &raquo;</li>
+        
+      <li>india_D90_settingsPage module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/india_D90_settingsPage.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-india_D90_settingsPage">
+<span id="india-d90-settingspage-module"></span><h1>india_D90_settingsPage module<a class="headerlink" href="#module-india_D90_settingsPage" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="india_D90_settingsPage.india_D90_settingsPage">
+<em class="property">class </em><code class="sig-prename descclassname">india_D90_settingsPage.</code><code class="sig-name descname">india_D90_settingsPage</code><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">page.BasePage.BasePage</span></code></p>
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.CloseLoudnessMode">
+<code class="sig-name descname">CloseLoudnessMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.CloseLoudnessMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>关闭Loudness模式（附加状态校验）
+:return: True关闭成功,False关闭失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkAccountBrandIsExist">
+<code class="sig-name descname">checkAccountBrandIsExist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkAccountBrandIsExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>判断Account Brand是否存在
+:return: True元素存在，False元素不存在</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkAccountColorIsExist">
+<code class="sig-name descname">checkAccountColorIsExist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkAccountColorIsExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>判断Account Color是否存在
+:return: True元素存在，False元素不存在</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkAccountEmergencyContactIsExist">
+<code class="sig-name descname">checkAccountEmergencyContactIsExist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkAccountEmergencyContactIsExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>判断Account Emergency Contact是否存在
+:return: True元素存在，False元素不存在</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkAccountEmergencyContactPersonIsExist">
+<code class="sig-name descname">checkAccountEmergencyContactPersonIsExist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkAccountEmergencyContactPersonIsExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>判断Account Emergency Contact Person是否存在
+:return: True元素存在，False元素不存在</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkAccountModelIsExist">
+<code class="sig-name descname">checkAccountModelIsExist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkAccountModelIsExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>判断Account Model是否存在
+:return: True元素存在，False元素不存在</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkAccountModelYearIsExist">
+<code class="sig-name descname">checkAccountModelYearIsExist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkAccountModelYearIsExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>判断Account Model Year是否存在
+:return: True元素存在，False元素不存在</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkAccountRegistrationNumberIsExist">
+<code class="sig-name descname">checkAccountRegistrationNumberIsExist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkAccountRegistrationNumberIsExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>判断Account Registration Number是否存在
+:return: True元素存在，False元素不存在</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkAccountVinIsExist">
+<code class="sig-name descname">checkAccountVinIsExist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkAccountVinIsExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>判断Account VIN是否存在
+:return: True元素存在，False元素不存在</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkCurrentPage">
+<code class="sig-name descname">checkCurrentPage</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">title</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkCurrentPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>根据传入页面Title检查当前页面（判断该页面下高亮条是否存在）
+:return: True当前处于该页面，False当前不是该页面</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkCustomInputBoxIsExist">
+<code class="sig-name descname">checkCustomInputBoxIsExist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkCustomInputBoxIsExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>检查开机欢迎语输入框是否存在
+:return: True存在，False不存在</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkFactoryResetText">
+<code class="sig-name descname">checkFactoryResetText</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkFactoryResetText" title="Permalink to this definition">¶</a></dt>
+<dd><p>检查；Factory Reset话术
+:return: True话术正确，False话术错误</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkGoodByeMessageStatusIsOff">
+<code class="sig-name descname">checkGoodByeMessageStatusIsOff</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkGoodByeMessageStatusIsOff" title="Permalink to this definition">¶</a></dt>
+<dd><p>检测GoddByeMessage状态是Off
+:return: True检验成功，False检验失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkGoodByeMessageStatusIsOn">
+<code class="sig-name descname">checkGoodByeMessageStatusIsOn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkGoodByeMessageStatusIsOn" title="Permalink to this definition">¶</a></dt>
+<dd><p>检测GoddByeMessage状态是On
+:return: True检验成功，False检验失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkHelloMGStatusIsOff">
+<code class="sig-name descname">checkHelloMGStatusIsOff</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkHelloMGStatusIsOff" title="Permalink to this definition">¶</a></dt>
+<dd><p>检查HelloMG状态是否是OFF
+:return: True返回状态ON，False返回状态Off</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkHelloMGStatusIsOn">
+<code class="sig-name descname">checkHelloMGStatusIsOn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkHelloMGStatusIsOn" title="Permalink to this definition">¶</a></dt>
+<dd><p>检查HelloMG状态是否是ON
+:return: True返回状态ON，False返回状态Off</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkLoudnessStatus">
+<code class="sig-name descname">checkLoudnessStatus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkLoudnessStatus" title="Permalink to this definition">¶</a></dt>
+<dd><p>查看Loudness状态
+:return: On 打开，Off 关闭</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkLowBatteryAlarmStatusIsOff">
+<code class="sig-name descname">checkLowBatteryAlarmStatusIsOff</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkLowBatteryAlarmStatusIsOff" title="Permalink to this definition">¶</a></dt>
+<dd><p>检测Low Battery Alarm状态是Off
+:return: True检验成功，False检验失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkLowBatteryAlarmStatusIsOn">
+<code class="sig-name descname">checkLowBatteryAlarmStatusIsOn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkLowBatteryAlarmStatusIsOn" title="Permalink to this definition">¶</a></dt>
+<dd><p>检测Low Battery Alarm状态是On
+:return: True检验成功，False检验失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkLowFuelAlertStatusIsOff">
+<code class="sig-name descname">checkLowFuelAlertStatusIsOff</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkLowFuelAlertStatusIsOff" title="Permalink to this definition">¶</a></dt>
+<dd><p>检测LowFuelAlert状态是Off
+:return: True检验成功，False检验失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkLowFuelAlertStatusIsOn">
+<code class="sig-name descname">checkLowFuelAlertStatusIsOn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkLowFuelAlertStatusIsOn" title="Permalink to this definition">¶</a></dt>
+<dd><p>检测LowFuelAlert状态是On
+:return: True检验成功，False检验失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkOneShotCommandStatusIsOff">
+<code class="sig-name descname">checkOneShotCommandStatusIsOff</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkOneShotCommandStatusIsOff" title="Permalink to this definition">¶</a></dt>
+<dd><p>检测OneShotCommand状态是Off
+:return: True检验成功，False检验失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkOneShotCommandStatusIsOn">
+<code class="sig-name descname">checkOneShotCommandStatusIsOn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkOneShotCommandStatusIsOn" title="Permalink to this definition">¶</a></dt>
+<dd><p>检测OneShotCommand状态是On
+:return: True检验成功，False检验失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkSystemResetText">
+<code class="sig-name descname">checkSystemResetText</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkSystemResetText" title="Permalink to this definition">¶</a></dt>
+<dd><p>检查；System Reset话术
+:return: True话术正确，False话术错误</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkTimeFormatIs12Hour">
+<code class="sig-name descname">checkTimeFormatIs12Hour</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkTimeFormatIs12Hour" title="Permalink to this definition">¶</a></dt>
+<dd><p>检查12小时制话术（用于校验点击选择12小时制后的话术显示）
+:return:  True校验成功，False校验失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkTimeFormatIs24Hour">
+<code class="sig-name descname">checkTimeFormatIs24Hour</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkTimeFormatIs24Hour" title="Permalink to this definition">¶</a></dt>
+<dd><p>检查24小时制话术（用于校验点击选择12小时制后的话术显示）
+:return: True校验成功，False校验失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkTirePressureMonitoringAlarmStatusIsOff">
+<code class="sig-name descname">checkTirePressureMonitoringAlarmStatusIsOff</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkTirePressureMonitoringAlarmStatusIsOff" title="Permalink to this definition">¶</a></dt>
+<dd><p>检测TirePressureMonitoringAlarm状态是Off
+:return: True检验成功，False检验失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkTirePressureMonitoringAlarmStatusIsOn">
+<code class="sig-name descname">checkTirePressureMonitoringAlarmStatusIsOn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkTirePressureMonitoringAlarmStatusIsOn" title="Permalink to this definition">¶</a></dt>
+<dd><p>检测TirePressureMonitoringAlarm状态是On
+:return: True检验成功，False检验失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkUpdateMessage">
+<code class="sig-name descname">checkUpdateMessage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkUpdateMessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>检查Setting模块Update页面文本信息是否正确
+:return: True文本信息正确，False文本信息错误</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkVehicleResetText">
+<code class="sig-name descname">checkVehicleResetText</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkVehicleResetText" title="Permalink to this definition">¶</a></dt>
+<dd><p>检查；Vehicle Reset话术
+:return: True话术正确，False话术错误</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkWelcomeMessageButtonStatusIsOff">
+<code class="sig-name descname">checkWelcomeMessageButtonStatusIsOff</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkWelcomeMessageButtonStatusIsOff" title="Permalink to this definition">¶</a></dt>
+<dd><p>检查WelcomeMessageButtonStatus状态是否是OFF
+:return: True返回状态ON，False返回状态Off</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkWelcomeMessageButtonStatusIsOn">
+<code class="sig-name descname">checkWelcomeMessageButtonStatusIsOn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkWelcomeMessageButtonStatusIsOn" title="Permalink to this definition">¶</a></dt>
+<dd><p>检查welcomeMessageButton状态是否是ON
+:return: True返回状态ON，False返回状态Off</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkWifiButtonStatusIsOff">
+<code class="sig-name descname">checkWifiButtonStatusIsOff</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkWifiButtonStatusIsOff" title="Permalink to this definition">¶</a></dt>
+<dd><p>检测wifi开关状态是否为Off
+:return: True On, False Off</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkWifiButtonStatusIsOn">
+<code class="sig-name descname">checkWifiButtonStatusIsOn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkWifiButtonStatusIsOn" title="Permalink to this definition">¶</a></dt>
+<dd><p>检测wifi开关状态是否为On
+:return: True On, False Off</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkWifiIncludLockIconByName">
+<code class="sig-name descname">checkWifiIncludLockIconByName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wifiName</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkWifiIncludLockIconByName" title="Permalink to this definition">¶</a></dt>
+<dd><p>通过wifi名称检测是否有锁图标
+:param wifiName: wifi名称传参
+:return: True有所，</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.checkdToneEffectFrequency">
+<code class="sig-name descname">checkdToneEffectFrequency</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.checkdToneEffectFrequency" title="Permalink to this definition">¶</a></dt>
+<dd><p>检查音轨下标数值是否与实际一致80、500、1k、5k、16k
+:return: True文本正确，False文本错误</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.chooseANetWorkTextIsExist">
+<code class="sig-name descname">chooseANetWorkTextIsExist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.chooseANetWorkTextIsExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>判断是否有choose a network栏（用于判断滑动wifi列表是否已经划至顶）
+:return: True该控件存在，False该控件不存在</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.chooseThemeBusinnesGrey">
+<code class="sig-name descname">chooseThemeBusinnesGrey</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.chooseThemeBusinnesGrey" title="Permalink to this definition">¶</a></dt>
+<dd><p>选择business皮肤（带校验）
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.chooseThemeMysteriousPurple">
+<code class="sig-name descname">chooseThemeMysteriousPurple</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.chooseThemeMysteriousPurple" title="Permalink to this definition">¶</a></dt>
+<dd><p>选择Mysterious皮肤（带校验）
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.click12HTime">
+<code class="sig-name descname">click12HTime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.click12HTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击选择12小时制（附带校验）
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.click24HTime">
+<code class="sig-name descname">click24HTime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.click24HTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击选择24小时制（附带校验）
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickAboutMG">
+<code class="sig-name descname">clickAboutMG</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickAboutMG" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动查找Setting页面中的AboutMG栏
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickAccount">
+<code class="sig-name descname">clickAccount</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickAccount" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动查找Setting页面中的Account栏
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickAutoTimeZoneButton">
+<code class="sig-name descname">clickAutoTimeZoneButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickAutoTimeZoneButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击AutoTimeZone按键
+:return:  True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickAutoTimeZoneStatus">
+<code class="sig-name descname">clickAutoTimeZoneStatus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickAutoTimeZoneStatus" title="Permalink to this definition">¶</a></dt>
+<dd><p>查看AutoTimeZone状态
+:return:  On、Off</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickBackButton">
+<code class="sig-name descname">clickBackButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickBackButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击返回按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickBluetooth">
+<code class="sig-name descname">clickBluetooth</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickBluetooth" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动查找Setting页面中的Bluetooth栏
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickBtButton">
+<code class="sig-name descname">clickBtButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickBtButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击蓝牙开关（用于openBTButton，）
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickCancel">
+<code class="sig-name descname">clickCancel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickCancel" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击cancel按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickClassicMode">
+<code class="sig-name descname">clickClassicMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickClassicMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击Classic模式
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickConfirm">
+<code class="sig-name descname">clickConfirm</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickConfirm" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击Confirm按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickCustomButton">
+<code class="sig-name descname">clickCustomButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickCustomButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击Custom按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickDisplay">
+<code class="sig-name descname">clickDisplay</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickDisplay" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动查找Setting页面中的Display栏
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickDisplayAuto">
+<code class="sig-name descname">clickDisplayAuto</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickDisplayAuto" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击Dispaly Auto按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickDisplayDay">
+<code class="sig-name descname">clickDisplayDay</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickDisplayDay" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击Dispaly Day按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickDisplayNight">
+<code class="sig-name descname">clickDisplayNight</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickDisplayNight" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击Dispaly Night按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickEndUserLicenseAgreement">
+<code class="sig-name descname">clickEndUserLicenseAgreement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickEndUserLicenseAgreement" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击查看endUserLicenseAgreement信息
+:return:  True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickFactoryReset">
+<code class="sig-name descname">clickFactoryReset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickFactoryReset" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动查找Setting页面中的FactoryReset栏
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickFactoryResetButton">
+<code class="sig-name descname">clickFactoryResetButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickFactoryResetButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击FactoryReset开关
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickGoodByeMessageButton">
+<code class="sig-name descname">clickGoodByeMessageButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickGoodByeMessageButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击GoodByeMessageButton开关
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickHelloMGButton">
+<code class="sig-name descname">clickHelloMGButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickHelloMGButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击HelloMG开关
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickISmartVersionInfo">
+<code class="sig-name descname">clickISmartVersionInfo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickISmartVersionInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击查看版本信息（点击打开，再次点击收起）
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickJazzMode">
+<code class="sig-name descname">clickJazzMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickJazzMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击jazz模式
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickLowBatteryAlarmButton">
+<code class="sig-name descname">clickLowBatteryAlarmButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickLowBatteryAlarmButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击低电量报警开关
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickLowFuelAlertButton">
+<code class="sig-name descname">clickLowFuelAlertButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickLowFuelAlertButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击低油量报警开关
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickManualMode">
+<code class="sig-name descname">clickManualMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickManualMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击manual模式
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickNetWorkDevicesByWifiName">
+<code class="sig-name descname">clickNetWorkDevicesByWifiName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wifiName</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickNetWorkDevicesByWifiName" title="Permalink to this definition">¶</a></dt>
+<dd><p>查询wifi连接，如果存在则点击，如果未找到则滑动2次查找，2次滑动找不到则判定失败
+:return:  True滑动成功，False滑动失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickNetwork">
+<code class="sig-name descname">clickNetwork</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickNetwork" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动查找Setting页面中的Network栏
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickOK">
+<code class="sig-name descname">clickOK</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickOK" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击OK按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickOneShotCommandButton">
+<code class="sig-name descname">clickOneShotCommandButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickOneShotCommandButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击OneShotCommand开关
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickPopMode">
+<code class="sig-name descname">clickPopMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickPopMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击pop模式
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickPrivacyPolicy">
+<code class="sig-name descname">clickPrivacyPolicy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickPrivacyPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击查看Privacy Policy信息
+:return:  True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickRandomButton">
+<code class="sig-name descname">clickRandomButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickRandomButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击Random按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickReset">
+<code class="sig-name descname">clickReset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickReset" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击Reset按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickResetMode">
+<code class="sig-name descname">clickResetMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickResetMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击reset模式
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickRockMode">
+<code class="sig-name descname">clickRockMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickRockMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击rock模式
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickSVCHigh">
+<code class="sig-name descname">clickSVCHigh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickSVCHigh" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击SVC High按键
+:return:  True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickSVCLow">
+<code class="sig-name descname">clickSVCLow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickSVCLow" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击SVC Low按键
+:return:  True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickSVCNormal">
+<code class="sig-name descname">clickSVCNormal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickSVCNormal" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击SVC Normal按键
+:return:  True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickSVCOff">
+<code class="sig-name descname">clickSVCOff</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickSVCOff" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击SVC Off按键
+:return:  True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickServiceTerms">
+<code class="sig-name descname">clickServiceTerms</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickServiceTerms" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击查看serviceTerms信息
+:return:  True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickSetTheTime">
+<code class="sig-name descname">clickSetTheTime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickSetTheTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击进入Time页面Set the Time
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickSound">
+<code class="sig-name descname">clickSound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickSound" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动查找Setting页面中的Sound栏
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickSystemBeepHigh">
+<code class="sig-name descname">clickSystemBeepHigh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickSystemBeepHigh" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击SystemBeep High按键
+:return:  True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickSystemBeepLow">
+<code class="sig-name descname">clickSystemBeepLow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickSystemBeepLow" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击SystemBeep Low按键
+:return:  True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickSystemNotificationHigh">
+<code class="sig-name descname">clickSystemNotificationHigh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickSystemNotificationHigh" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击SystemNotification High按键
+:return:  True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickSystemNotificationLow">
+<code class="sig-name descname">clickSystemNotificationLow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickSystemNotificationLow" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击SystemNotification Low按键
+:return:  True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickSystemNotificationOff">
+<code class="sig-name descname">clickSystemNotificationOff</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickSystemNotificationOff" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击SystemNotification Off按键
+:return:  True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickSystemResetButton">
+<code class="sig-name descname">clickSystemResetButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickSystemResetButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击SystemResetButton开关
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickTheme">
+<code class="sig-name descname">clickTheme</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickTheme" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动查找Setting页面中的Theme栏
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickTime">
+<code class="sig-name descname">clickTime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动查找Setting页面中的Time栏
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickTirePressureMonitoringAlarmButton">
+<code class="sig-name descname">clickTirePressureMonitoringAlarmButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickTirePressureMonitoringAlarmButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击胎压报警开关
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickToneEffectPage">
+<code class="sig-name descname">clickToneEffectPage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickToneEffectPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击ToneEffect页面（附带页面校验checkCurrentPage方法）
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickToneFieldPage">
+<code class="sig-name descname">clickToneFieldPage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickToneFieldPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击ToneField页面（附带页面校验checkCurrentPage方法）
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickToneFieldResetButton">
+<code class="sig-name descname">clickToneFieldResetButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickToneFieldResetButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击ToneField页面Reset按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickUSBStorage">
+<code class="sig-name descname">clickUSBStorage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickUSBStorage" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动查找Setting页面中的USBStorage栏
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickUpdate">
+<code class="sig-name descname">clickUpdate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickUpdate" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动查找Setting页面中的Update栏
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickUpdateBackButton">
+<code class="sig-name descname">clickUpdateBackButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickUpdateBackButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击Setting模块Update页面左上返回按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickUserManual">
+<code class="sig-name descname">clickUserManual</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickUserManual" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动查找Setting页面中的UserManual栏
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickVehicleResetButton">
+<code class="sig-name descname">clickVehicleResetButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickVehicleResetButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击VehicleResetButton开关
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickVocalMode">
+<code class="sig-name descname">clickVocalMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickVocalMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击vocal模式
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickVoiceAssistant">
+<code class="sig-name descname">clickVoiceAssistant</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickVoiceAssistant" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动查找Setting页面中的VoiceAssistant栏
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickVolumePage">
+<code class="sig-name descname">clickVolumePage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickVolumePage" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击VolumePage页面（附带页面校验checkCurrentPage方法）
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickWelcomeMessageButton">
+<code class="sig-name descname">clickWelcomeMessageButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickWelcomeMessageButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击welcomeMessage开关
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.clickWifiButton">
+<code class="sig-name descname">clickWifiButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.clickWifiButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击wifi开关
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.closeBTButton">
+<code class="sig-name descname">closeBTButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.closeBTButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>关闭蓝牙开关，如果未关闭则关闭蓝牙开关（带点击后状态校验）
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.closeGoodByeMessageButton">
+<code class="sig-name descname">closeGoodByeMessageButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.closeGoodByeMessageButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>关闭Goodbye Message（附带校验）
+:return: True关闭成功，False关闭失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.closeHelloMGButton">
+<code class="sig-name descname">closeHelloMGButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.closeHelloMGButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>关闭HelloMG（附带状态校验）
+:return:  True 关闭成功，False关闭失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.closeLowBatteryAlarmButton">
+<code class="sig-name descname">closeLowBatteryAlarmButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.closeLowBatteryAlarmButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>关闭LowBatteryAlarm（附带校验）
+:return: True关闭成功，False关闭失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.closeLowFuelAlertButton">
+<code class="sig-name descname">closeLowFuelAlertButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.closeLowFuelAlertButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>关闭LowFuelAlert（附带校验）
+:return: True关闭成功，False关闭失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.closeOneShotCommandButton">
+<code class="sig-name descname">closeOneShotCommandButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.closeOneShotCommandButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>关闭OneShotCommand（附带校验）
+:return: True关闭成功，False关闭失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.closeTirePressureMonitoringAlarmButton">
+<code class="sig-name descname">closeTirePressureMonitoringAlarmButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.closeTirePressureMonitoringAlarmButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>关闭TirePressureMonitoringAlarm（附带校验）
+:return: True关闭成功，False关闭失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.closeWelcomeMessageButton">
+<code class="sig-name descname">closeWelcomeMessageButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.closeWelcomeMessageButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>关闭WelcomeMessage（附带状态校验）
+:return:  True 关闭成功，False关闭失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.closeWifiButton">
+<code class="sig-name descname">closeWifiButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.closeWifiButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>关闭wifi开关(附带wifi开关状态校验)
+:return:  True关闭成功，False关闭失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.findSVCGroup">
+<code class="sig-name descname">findSVCGroup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.findSVCGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>定位SVC栏，无返回
+:return: 无</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.getAccountBrand">
+<code class="sig-name descname">getAccountBrand</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.getAccountBrand" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取账号信息下Brand字段值
+:return: Brand字段值</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.getAccountColor">
+<code class="sig-name descname">getAccountColor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.getAccountColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取账号信息下Color字段值
+:return: Color字段值</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.getAccountEmergencyContact">
+<code class="sig-name descname">getAccountEmergencyContact</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.getAccountEmergencyContact" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取账号信息下Emergency Contact字段值
+:return: Emergency Contact字段值</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.getAccountEmergencyContactPerson">
+<code class="sig-name descname">getAccountEmergencyContactPerson</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.getAccountEmergencyContactPerson" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取账号信息下Emergency Contact Person字段值
+:return: Emergency Contact Person字段值</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.getAccountModel">
+<code class="sig-name descname">getAccountModel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.getAccountModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取账号信息下Model字段值
+:return: Model字段值</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.getAccountModelYear">
+<code class="sig-name descname">getAccountModelYear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.getAccountModelYear" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取账号信息下ModelYear字段值
+:return: ModelYear字段值</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.getAccountName">
+<code class="sig-name descname">getAccountName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.getAccountName" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取账号昵称部分
+:return:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.getAccountRegistrationNumber">
+<code class="sig-name descname">getAccountRegistrationNumber</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.getAccountRegistrationNumber" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取账号信息下RegistrationNumber字段值
+:return: RegistrationNumber字段值</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.getAccountVin">
+<code class="sig-name descname">getAccountVin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.getAccountVin" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取账号信息下Color字段值
+:return: Color字段值</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.getAllWifiConnectElements">
+<code class="sig-name descname">getAllWifiConnectElements</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.getAllWifiConnectElements" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取当前页面中wifi列表所有connect项(包含已连接过和未连接过)
+:return: elements 返回element列表</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.getInputWifiPassword">
+<code class="sig-name descname">getInputWifiPassword</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.getInputWifiPassword" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取输入框中输入的密码（输入wifi密码）
+:param text: 输入wifi密码
+:return: 返回字符串</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.getSumPageNum">
+<code class="sig-name descname">getSumPageNum</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.getSumPageNum" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取用户手册总页码
+:return: 用户手册总页码</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.getWifiConnectElementsWhichConnected">
+<code class="sig-name descname">getWifiConnectElementsWhichConnected</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.getWifiConnectElementsWhichConnected" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取当前页面中wifi列表中已连接过的所有connect项
+:return: elements 返回element列表</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.getWifiStatusByName">
+<code class="sig-name descname">getWifiStatusByName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wifiName</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.getWifiStatusByName" title="Permalink to this definition">¶</a></dt>
+<dd><p>通过wifi名称获取wifi连接状态
+:param wifiName: wifi名称传参
+:return: 返回wifi连接状态Connected、Saved，连接状态不存在返回None，找不到wifi名称返回None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.inputWifiPassword">
+<code class="sig-name descname">inputWifiPassword</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.inputWifiPassword" title="Permalink to this definition">¶</a></dt>
+<dd><p>搜索输入框输入密码（输入wifi密码）
+:param text: 输入wifi密码
+:return: True传入成功，False传入失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.mediaStepIncrease">
+<code class="sig-name descname">mediaStepIncrease</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.mediaStepIncrease" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.mediaStepReduce">
+<code class="sig-name descname">mediaStepReduce</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.mediaStepReduce" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.mediaVolumeMax">
+<code class="sig-name descname">mediaVolumeMax</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.mediaVolumeMax" title="Permalink to this definition">¶</a></dt>
+<dd><p>媒体音量最大（附带最值校验）
+:return: True最值比较正确，False最值比较错误</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.mediaVolumeMin">
+<code class="sig-name descname">mediaVolumeMin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.mediaVolumeMin" title="Permalink to this definition">¶</a></dt>
+<dd><p>媒体音量最小（附带最值校验）
+:return: True最值比较正确，False最值比较错误</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.naviVolumeMax">
+<code class="sig-name descname">naviVolumeMax</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.naviVolumeMax" title="Permalink to this definition">¶</a></dt>
+<dd><p>导航音量最大（附带最值校验）
+:return: True最值比较正确，False最值比较错误</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.naviVolumeMin">
+<code class="sig-name descname">naviVolumeMin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.naviVolumeMin" title="Permalink to this definition">¶</a></dt>
+<dd><p>导航音量最小（附带最值校验）
+:return: True最值比较正确，False最值比较错误</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.openBTButton">
+<code class="sig-name descname">openBTButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.openBTButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>打开蓝牙开关，如果未打开则打开蓝牙开关（带点击后状态校验）
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.openCustomButton">
+<code class="sig-name descname">openCustomButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.openCustomButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>打开Custom开机自定义模式
+:return: True打开成功，False打开失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.openGoodByeMessageButton">
+<code class="sig-name descname">openGoodByeMessageButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.openGoodByeMessageButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>打开Goodbye Message（附带校验）
+:return: True打开成功，False打开失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.openHelloMGButton">
+<code class="sig-name descname">openHelloMGButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.openHelloMGButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>打开HelloMG（附带状态校验）
+:return: True 打开成功，False打开失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.openLoudnessMode">
+<code class="sig-name descname">openLoudnessMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.openLoudnessMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>打开Loudness模式（附加状态校验）
+:return: True打开成功,False打开失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.openLowBatteryAlarmButton">
+<code class="sig-name descname">openLowBatteryAlarmButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.openLowBatteryAlarmButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>打开LowBatteryAlarm（附带校验）
+:return: True打开成功，False打开失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.openLowFuelAlertButton">
+<code class="sig-name descname">openLowFuelAlertButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.openLowFuelAlertButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>打开LowFuelAlert（附带校验）
+:return: True打开成功，False打开失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.openOneShotCommandButton">
+<code class="sig-name descname">openOneShotCommandButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.openOneShotCommandButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>打开OneShotCommand（附带校验）
+:return: True打开成功，False打开失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.openTirePressureMonitoringAlarmButton">
+<code class="sig-name descname">openTirePressureMonitoringAlarmButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.openTirePressureMonitoringAlarmButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>打开TirePressureMonitoringAlarm（附带校验）
+:return: True打开成功，False打开失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.openWelcomeMessageButton">
+<code class="sig-name descname">openWelcomeMessageButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.openWelcomeMessageButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>打开WelcomeMessage（附带状态校验）
+:return: True 打开成功，False打开失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.openWifiButton">
+<code class="sig-name descname">openWifiButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.openWifiButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>打开wifi开关(附带wifi开关状态校验)
+:return:  True打开成功，False打开失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.phoneVolumeMax">
+<code class="sig-name descname">phoneVolumeMax</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.phoneVolumeMax" title="Permalink to this definition">¶</a></dt>
+<dd><p>电话音量最大（附带最值校验）
+:return: True最值比较正确，False最值比较错误</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.phoneVolumeMin">
+<code class="sig-name descname">phoneVolumeMin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.phoneVolumeMin" title="Permalink to this definition">¶</a></dt>
+<dd><p>电话音量最小（附带最值校验）
+:return:  True最值比较正确，False最值比较错误</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.swip80seek">
+<code class="sig-name descname">swip80seek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.swip80seek" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动声道（预留方法）
+:return: True滑动成功，False滑动失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.swipDisplayBrightnessMax">
+<code class="sig-name descname">swipDisplayBrightnessMax</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.swipDisplayBrightnessMax" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动亮度至最大(附带数值校验)
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.swipDisplayBrightnessMin">
+<code class="sig-name descname">swipDisplayBrightnessMin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.swipDisplayBrightnessMin" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动亮度至最小(附带数值校验)
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.swipTime">
+<code class="sig-name descname">swipTime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.swipTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>预留方法（暂不使用）</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.swipeBtDevices">
+<code class="sig-name descname">swipeBtDevices</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.swipeBtDevices" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动蓝牙驱动连接页面
+:return:  True滑动成功，False滑动失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.swipeDownVoiceAssistantPage">
+<code class="sig-name descname">swipeDownVoiceAssistantPage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.swipeDownVoiceAssistantPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>划至VoiceAssistant页面底部
+:return: True滑动成功，False滑动失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.swipeDownVolumePage">
+<code class="sig-name descname">swipeDownVolumePage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.swipeDownVolumePage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Volume页面下划
+:return: True滑动成功 False滑动失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.swipeDownWifiConnectList">
+<code class="sig-name descname">swipeDownWifiConnectList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.swipeDownWifiConnectList" title="Permalink to this definition">¶</a></dt>
+<dd><p>向下滑动wifi连接列表
+:return: True滑动成功，False滑动失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.swipeToAccountBeginning">
+<code class="sig-name descname">swipeToAccountBeginning</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.swipeToAccountBeginning" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动至账号页面顶部</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.swipeToAccountEnd">
+<code class="sig-name descname">swipeToAccountEnd</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.swipeToAccountEnd" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动至账号页面底部
+:return:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.swipeUpVoiceAssistantPage">
+<code class="sig-name descname">swipeUpVoiceAssistantPage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.swipeUpVoiceAssistantPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>划至VoiceAssistant页面顶部
+:return: True滑动成功，False滑动失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.swipeUpVolumePage">
+<code class="sig-name descname">swipeUpVolumePage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.swipeUpVolumePage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Volume页面上划
+:return: True滑动成功 False滑动失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.swipeUpWifiConnectList">
+<code class="sig-name descname">swipeUpWifiConnectList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.swipeUpWifiConnectList" title="Permalink to this definition">¶</a></dt>
+<dd><p>向上滑动wifi连接列表
+:return: True滑动成功，False滑动失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.swipeWifiConnectListToEnding">
+<code class="sig-name descname">swipeWifiConnectListToEnding</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.swipeWifiConnectListToEnding" title="Permalink to this definition">¶</a></dt>
+<dd><p>向下滑动wifi连接列表至底部</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_settingsPage.india_D90_settingsPage.swipeWifiConnectListTobeginning">
+<code class="sig-name descname">swipeWifiConnectListTobeginning</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_settingsPage.india_D90_settingsPage.swipeWifiConnectListTobeginning" title="Permalink to this definition">¶</a></dt>
+<dd><p>向上滑动wifi连接列表置顶</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="india_D90_userManual.html" class="btn btn-neutral float-right" title="india_D90_userManual module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="india_D90_radioPage.html" class="btn btn-neutral float-left" title="india_D90_radioPage module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, chao
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

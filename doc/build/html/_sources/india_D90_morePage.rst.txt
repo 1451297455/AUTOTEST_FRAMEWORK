@@ -1,0 +1,7 @@
+india\_D90\_morePage module
+===========================
+
+.. automodule:: india_D90_morePage
+   :members:
+   :undoc-members:
+   :show-inheritance:

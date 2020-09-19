@@ -1,0 +1,7 @@
+thailand\_AS23P\_btphonePage module
+===================================
+
+.. automodule:: thailand_AS23P_btphonePage
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+homePage module
+===============
+
+.. automodule:: homePage
+   :members:
+   :undoc-members:
+   :show-inheritance:

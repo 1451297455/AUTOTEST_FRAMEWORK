@@ -1,0 +1,7 @@
+dial_the_last_number(印度女声).wav
+dial_the_last_number(印度男声).wav
+录音有问题
+
+make_a_call_to_the_last_number(印度女声)|2|12|Who would you like to call?|Make call to the last number
+make_a_call_to_the_last_number(印度女声)|3|12|Who would you like to call?|Make call to the last number
+这个应该是回拨的？

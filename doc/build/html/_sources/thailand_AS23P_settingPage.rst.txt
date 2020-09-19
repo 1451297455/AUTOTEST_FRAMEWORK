@@ -1,0 +1,7 @@
+thailand\_AS23P\_settingPage module
+===================================
+
+.. automodule:: thailand_AS23P_settingPage
+   :members:
+   :undoc-members:
+   :show-inheritance:

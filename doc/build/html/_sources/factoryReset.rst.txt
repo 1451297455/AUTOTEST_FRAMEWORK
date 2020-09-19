@@ -1,0 +1,7 @@
+factoryReset module
+===================
+
+.. automodule:: factoryReset
+   :members:
+   :undoc-members:
+   :show-inheritance:

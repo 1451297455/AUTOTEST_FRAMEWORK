@@ -1,0 +1,506 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="EN" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>india_D90_musicPage module &mdash; Autotest 1.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="india_D90_radioPage module" href="india_D90_radioPage.html" />
+    <link rel="prev" title="india_D90_morePage module" href="india_D90_morePage.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Autotest
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">page</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="BasePage.html">BasePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configparserHandler.html">configparserHandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="factoryReset.html">factoryReset module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="homePage.html">homePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="htmlParser.html">htmlParser module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_btPhonePage.html">india_D90_btPhonePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_gaanaPage.html">india_D90_gaanaPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_homePage.html">india_D90_homePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_morePage.html">india_D90_morePage module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">india_D90_musicPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_radioPage.html">india_D90_radioPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_settingsPage.html">india_D90_settingsPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_userManual.html">india_D90_userManual module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_voice.html">india_D90_voice module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_weatherPage.html">india_D90_weatherPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="publicMethod.html">publicMethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_accountPage.html">thailand_AS23P_accountPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_batteryPage.html">thailand_AS23P_batteryPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_btphonePage.html">thailand_AS23P_btphonePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_callCentrePage.html">thailand_AS23P_callCentrePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_carphonePage.html">thailand_AS23P_carphonePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_folderPage.html">thailand_AS23P_folderPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_homePage.html">thailand_AS23P_homePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_inboxPage.html">thailand_AS23P_inboxPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_lifeStylePage.html">thailand_AS23P_lifeStylePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_mediaPage.html">thailand_AS23P_mediaPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_passionServicePage.html">thailand_AS23P_passionServicePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_radioPage.html">thailand_AS23P_radioPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_settingPage.html">thailand_AS23P_settingPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_translate.html">thailand_AS23P_translate module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Autotest</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">page</a> &raquo;</li>
+        
+      <li>india_D90_musicPage module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/india_D90_musicPage.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-india_D90_musicPage">
+<span id="india-d90-musicpage-module"></span><h1>india_D90_musicPage module<a class="headerlink" href="#module-india_D90_musicPage" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="india_D90_musicPage.india_D90_musicPage">
+<em class="property">class </em><code class="sig-prename descclassname">india_D90_musicPage.</code><code class="sig-name descname">india_D90_musicPage</code><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">page.BasePage.BasePage</span></code></p>
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.addSongToPlayList1">
+<code class="sig-name descname">addSongToPlayList1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.addSongToPlayList1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.addSongToPlayList2">
+<code class="sig-name descname">addSongToPlayList2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.addSongToPlayList2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.addSongToPlayList3">
+<code class="sig-name descname">addSongToPlayList3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.addSongToPlayList3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.changeCycleMode">
+<code class="sig-name descname">changeCycleMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.changeCycleMode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.changeToBtMusic">
+<code class="sig-name descname">changeToBtMusic</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.changeToBtMusic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.changeToGaana">
+<code class="sig-name descname">changeToGaana</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.changeToGaana" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.changeToLocalMusic">
+<code class="sig-name descname">changeToLocalMusic</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.changeToLocalMusic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.changeToUsb1Music">
+<code class="sig-name descname">changeToUsb1Music</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.changeToUsb1Music" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.changeToUsb2Music">
+<code class="sig-name descname">changeToUsb2Music</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.changeToUsb2Music" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.checkSongByNameInFavPageIsExist">
+<code class="sig-name descname">checkSongByNameInFavPageIsExist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.checkSongByNameInFavPageIsExist" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.checkSongIsPaused">
+<code class="sig-name descname">checkSongIsPaused</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.checkSongIsPaused" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.checkSongIsPlaying">
+<code class="sig-name descname">checkSongIsPlaying</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.checkSongIsPlaying" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.checkUsbMusicStringWithoutUsb">
+<code class="sig-name descname">checkUsbMusicStringWithoutUsb</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.checkUsbMusicStringWithoutUsb" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.choosePlayList1">
+<code class="sig-name descname">choosePlayList1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.choosePlayList1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.choosePlayList2">
+<code class="sig-name descname">choosePlayList2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.choosePlayList2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.choosePlayList3">
+<code class="sig-name descname">choosePlayList3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.choosePlayList3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickAddToPlayListByName">
+<code class="sig-name descname">clickAddToPlayListByName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickAddToPlayListByName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickAllSongsPage">
+<code class="sig-name descname">clickAllSongsPage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickAllSongsPage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickCancel">
+<code class="sig-name descname">clickCancel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickCancel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickCurrentSongHeartIcon">
+<code class="sig-name descname">clickCurrentSongHeartIcon</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickCurrentSongHeartIcon" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickDeleteSongButton">
+<code class="sig-name descname">clickDeleteSongButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickDeleteSongButton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickFavButtonByName">
+<code class="sig-name descname">clickFavButtonByName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickFavButtonByName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickFavButtonByNameInMySongs">
+<code class="sig-name descname">clickFavButtonByNameInMySongs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickFavButtonByNameInMySongs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickFavPage">
+<code class="sig-name descname">clickFavPage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickFavPage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickFolderPage">
+<code class="sig-name descname">clickFolderPage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickFolderPage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickMusicSpinner">
+<code class="sig-name descname">clickMusicSpinner</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickMusicSpinner" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickMySongsPage">
+<code class="sig-name descname">clickMySongsPage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickMySongsPage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickNextSong">
+<code class="sig-name descname">clickNextSong</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickNextSong" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickOK">
+<code class="sig-name descname">clickOK</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickOK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickPlayAll">
+<code class="sig-name descname">clickPlayAll</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickPlayAll" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickPlayButton">
+<code class="sig-name descname">clickPlayButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickPlayButton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickPlaySongByName">
+<code class="sig-name descname">clickPlaySongByName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickPlaySongByName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickPlaySongByNameInMySongs">
+<code class="sig-name descname">clickPlaySongByNameInMySongs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickPlaySongByNameInMySongs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickPreSong">
+<code class="sig-name descname">clickPreSong</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickPreSong" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickRecentsPage">
+<code class="sig-name descname">clickRecentsPage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickRecentsPage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.clickRemoveAll">
+<code class="sig-name descname">clickRemoveAll</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.clickRemoveAll" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.closePlayList">
+<code class="sig-name descname">closePlayList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.closePlayList" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.deleteSongBySwipeName">
+<code class="sig-name descname">deleteSongBySwipeName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.deleteSongBySwipeName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.editPlayList1Name">
+<code class="sig-name descname">editPlayList1Name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.editPlayList1Name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.editPlayList2Name">
+<code class="sig-name descname">editPlayList2Name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.editPlayList2Name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.editPlayList3Name">
+<code class="sig-name descname">editPlayList3Name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.editPlayList3Name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.getCurrentSongName">
+<code class="sig-name descname">getCurrentSongName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.getCurrentSongName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.getPlayList1Name">
+<code class="sig-name descname">getPlayList1Name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.getPlayList1Name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.getPlayList2Name">
+<code class="sig-name descname">getPlayList2Name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.getPlayList2Name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.getPlayList3Name">
+<code class="sig-name descname">getPlayList3Name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.getPlayList3Name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.getTheLastSongNameInListView">
+<code class="sig-name descname">getTheLastSongNameInListView</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.getTheLastSongNameInListView" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.inputTextToPlayList">
+<code class="sig-name descname">inputTextToPlayList</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.inputTextToPlayList" title="Permalink to this definition">¶</a></dt>
+<dd><p>在输入框中输入值
+:param name: 传入值
+:return: True 传入成功 False传入失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.openEditPlayList1NamePage">
+<code class="sig-name descname">openEditPlayList1NamePage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.openEditPlayList1NamePage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.openEditPlayList2NamePage">
+<code class="sig-name descname">openEditPlayList2NamePage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.openEditPlayList2NamePage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_musicPage.india_D90_musicPage.openEditPlayList3NamePage">
+<code class="sig-name descname">openEditPlayList3NamePage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_musicPage.india_D90_musicPage.openEditPlayList3NamePage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="india_D90_radioPage.html" class="btn btn-neutral float-right" title="india_D90_radioPage module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="india_D90_morePage.html" class="btn btn-neutral float-left" title="india_D90_morePage module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, chao
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+thailand\_AS23P\_inboxPage module
+=================================
+
+.. automodule:: thailand_AS23P_inboxPage
+   :members:
+   :undoc-members:
+   :show-inheritance:

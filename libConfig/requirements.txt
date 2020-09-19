@@ -1,0 +1,12 @@
+atx
+uiautomator2
+xlrd
+bs4
+beautifulsoup4
+serial
+pyserial
+pygame
+jsonpatch
+azure-devops
+xlutils
+xlwt

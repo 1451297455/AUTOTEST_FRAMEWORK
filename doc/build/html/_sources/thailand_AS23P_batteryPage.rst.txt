@@ -1,0 +1,7 @@
+thailand\_AS23P\_batteryPage module
+===================================
+
+.. automodule:: thailand_AS23P_batteryPage
+   :members:
+   :undoc-members:
+   :show-inheritance:

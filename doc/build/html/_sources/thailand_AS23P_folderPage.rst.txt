@@ -1,0 +1,7 @@
+thailand\_AS23P\_folderPage module
+==================================
+
+.. automodule:: thailand_AS23P_folderPage
+   :members:
+   :undoc-members:
+   :show-inheritance:

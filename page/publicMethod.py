@@ -1,11 +1,14 @@
-import time
-import logging
-from page.BasePage import BasePage
+import os
+from UIconfig.Base import Base
 import subprocess
-from config import india_D90_propertiseConfig
+import configparser
+import UIconfig.logger as loggers
+
+logger = loggers.Logger()
 
 
-class publicMethod(BasePage):
+# import Run
+class PublicMethod(Base):
     @classmethod
     def back(self):
         '''点击返回
@@ -155,20 +158,33 @@ class publicMethod(BasePage):
     @classmethod
     def get_toast_message(self):
         message = self.d.toast.get_message(3, 3)
+        logger.info(message)
         self.d.toast.reset()
         return message
 
     @classmethod
     def openApp(self, package):
-        self.d.app_start(package)
+        try:
+            self.d.app_start(package)
+        except Exception as e:
+            logger.info(e)
+            return False
 
     @classmethod
     def stopApp(self, package):
-        self.d.app_stop(package)
+        try:
+            self.d.app_stop(package)
+        except Exception as e:
+            logger.info(e)
+            return False
 
     @classmethod
     def set_fastinput_ime(self):
-        self.d.set_fastinput_ime(True)
+        try:
+            self.d.set_fastinput_ime(True)
+        except Exception as e:
+            logger.info(e)
+            return False
 
     @classmethod
     def set_original_ime(self):
@@ -198,7 +214,7 @@ class publicMethod(BasePage):
     def _get_element_size(element):
         # rect = element.info['visibleBounds']
         rect = element.info['bounds']
-        # print(rect)
+        # logger.info(rect)
         x_center = (rect['left'] + rect['right']) / 2
         y_center = (rect['bottom'] + rect['top']) / 2
         x_left = rect['left']
@@ -214,8 +230,14 @@ class publicMethod(BasePage):
     def swipe_to_end(self):
         self.d(scrollable=True).scroll.toEnd()
 
+    def swipe_to_end_by_id(self, id=None):
+        self.d(scrollable=True, resourceId=id).scroll.toEnd()
+
     def swipe_to_beginning(self):
         self.d(scrollable=True).scroll.toBeginning()
+
+    def swipe_to_beginning_by_id(self, id=None):
+        self.d(scrollable=True, resourceId=id).scroll.toBeginning()
 
     def swipe_backto_description(self, text):
         self.d(scrollable=True).scroll.to(text=text)
@@ -257,10 +279,10 @@ class publicMethod(BasePage):
             y_up = rect['top']
             x_right = rect['right']
             y_down = rect['bottom']
-            print(x_center)
-            print(y_down - 50)
-            print(y_up)
-            self.d.swipe(x_center, y_down - 50, x_center, y_up, 0.5)
+            # logger.info(x_center)
+            # logger.info(y_down - 50)
+            # logger.info(y_up)
+            self.d.swipe(x_center, (y_down - y_up) * 3 / 4, x_center, y_up, 0.5)
             return True
         return False
 
@@ -279,7 +301,7 @@ class publicMethod(BasePage):
             y_up = rect['top']
             x_right = rect['right']
             y_down = rect['bottom']
-            self.d.swipe(x_center, y_up + 10, x_center, y_down, 0.5)
+            self.d.swipe(x_center, (y_down - y_up) / 4, x_center, y_down, 0.5)
             return True
         return False
 
@@ -379,28 +401,57 @@ class publicMethod(BasePage):
 
     def click_by_element(self, element):
         try:
-            element.click_exists(timeout=1)
-            print('click')
+            element.click()
+            # element.click_exists(timeout=1)
+            # logger.info('click')
             # time.sleep(1)
             return True
         except Exception as e:
-            logging.info(e)
-            print(e)
+            # logger.info(e)
             # time.sleep(1)
             return False
 
+    def long_click_by_element(self, element):
+        try:
+            element.long_click()
+            return True
+        except Exception as e:
+            return False
+
     def get_text_by_element(self, element):
+        if element is None:
+            return False
         return element.get_text()
 
     def get_Current_Activity(self):
-        return self.d.current_app().get('activity')
+        return self.d.app_current().get('activity')
 
     def inputText(self, element, text):
+        if element is None:
+            return False
         if element.exists:
             element.clear_text()
             element.set_text(text)
             return True
         return False
+
+    def input_text_by_adb(self, text):
+        """
+        用于输入框中输入特殊字符方法
+        :param element: 输入框元素
+        :param text: 输入字符串
+        :return: True 默认成功 False输入框不存在
+        """
+        os.system("adb shell input text " + text)
+        return True
+
+    def escapeKeyBoard_by_adb(self):
+        """
+        收起软键盘
+        :return: True 点击成功
+        """
+        os.system("adb shell input keyevent KEYCODE_ESCAPE")
+        return True
 
     def checkPage(self, activity):
         '''
@@ -417,10 +468,38 @@ class publicMethod(BasePage):
         end = time.process_time()
         logging.info('Take %6.3f' % (end - start))
         '''
-        print(str(self.d.app_current()))
+        # logger.info(str(self.d.app_current()))
         return str(self.d.app_current().get('activity')) == activity
 
     # 按键操作（方控、钢琴键）
     def pressButtenByKeyevent(self, keyevent):
-        hardKeyEvent = india_D90_propertiseConfig.HardKeyCommond.get(keyevent)
-        subprocess.Popen(hardKeyEvent, shell=True)
+        subprocess.Popen(keyevent, shell=True)
+
+    # 通过模块名、键定位读取配置文件（注：暂时写死配置文件路径）
+    def readConfigByModuleAndKey(self, project, module, key):
+        path = 'UIconfig/' + project + '_propertiseConfig.ini'
+        # logger.info(path)
+        config = configparser.ConfigParser()
+        try:
+            config.read_file(open(path, encoding='UTF8'))
+            value = config.get(module, key)
+        except Exception as e:
+            # logger.info('error ' + str(e))
+            return False
+        # logger.info(value)
+        return str(value)
+
+    # 读取整个module
+    def readConfigItemsByModule(self, project, module):
+        path = 'UIconfig/' + project + '_propertiseConfig.ini'
+        config = configparser.ConfigParser()
+        try:
+            config.read_file(open(path, encoding='UTF8'))
+            value = config.items(module)
+        except Exception as e:
+            return False
+        # logger.info(value)
+        return value
+
+
+pm = PublicMethod()

@@ -1,0 +1,7 @@
+thailand\_AS23P\_radioPage module
+=================================
+
+.. automodule:: thailand_AS23P_radioPage
+   :members:
+   :undoc-members:
+   :show-inheritance:

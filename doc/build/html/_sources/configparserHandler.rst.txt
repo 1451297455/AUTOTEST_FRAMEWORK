@@ -1,0 +1,7 @@
+configparserHandler module
+==========================
+
+.. automodule:: configparserHandler
+   :members:
+   :undoc-members:
+   :show-inheritance:

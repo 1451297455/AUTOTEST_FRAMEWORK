@@ -1,0 +1,7 @@
+thailand\_AS23P\_translate module
+=================================
+
+.. automodule:: thailand_AS23P_translate
+   :members:
+   :undoc-members:
+   :show-inheritance:

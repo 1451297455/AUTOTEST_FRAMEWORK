@@ -1,0 +1,7 @@
+thailand\_AS23P\_mediaPage module
+=================================
+
+.. automodule:: thailand_AS23P_mediaPage
+   :members:
+   :undoc-members:
+   :show-inheritance:

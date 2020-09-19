@@ -1,245 +1,105 @@
-import time
-import unittest
-import sys
-import HTMLTestRunnerCN
-from page.BasePage import BasePage as Base
-from page.publicMethod import publicMethod as PM
+import os, sys
+from argparse import ArgumentParser
+from UIconfig import adbTool as tool
+import logging
 
-from config import exlsTool, info, assertUntil
-
-
-class AVN_Test(unittest.TestCase, Base):
-
-    def setUp(self) -> None:
-        Base.set_driver(avn_device)
-
-    def demo(self, caseId, caseDescription, caseClass, caseMethod, caseParam, caseAssert, caseCheck, caseValuation):
-        '''
-               具体case
-               :return:
-               '''
-        global element
-        exlsUtil = exlsTool.exlsTool()
-        print(
-            "caseID:" + caseId + ",  caseDescription:" + caseDescription + ",  caseClass:" + caseClass + ",  caseMethod:" + caseMethod + ",   caseAssert:" + caseAssert + ",   caseCheckValue:" + caseCheck)
-        print("param:" + str(caseParam))
-        info.errorMessage = ""
-        if caseAssert == "skip" or caseId == "":
-            return "pass"
-        if caseAssert == "assertTrue":
-            try:
-                result = exlsUtil.getResult(caseClass, caseMethod, caseParam)
-            except:
-                info.errorMessage = "方法执行异常。"
-                result = False
-            if caseValuation != '' and caseValuation.startswith('para_'):
-                info.para[caseValuation.split('_')[1]] = result
-            if caseCheck == "":
-                assertUntil.assertTrue(result, caseCheck, caseId)
-                self.assertEqual(result, True, info.errorMessage)
-            else:
-                assertUntil.assertTrue(result, caseCheck, caseId)
-                self.assertEqual(result, caseCheck, info.errorMessage)
-        elif caseAssert == "assertFalse":
-            try:
-                result = exlsUtil.getResult(caseClass, caseMethod, caseParam)
-            except:
-                info.errorMessage = "方法执行异常。"
-                result = False
-            if caseValuation != '' and caseValuation.startswith('para_'):
-                info.para[caseValuation.split('_')[1]] = result
-            if caseCheck == "":
-                self.assertEqual(result, False, info.errorMessage)
-            else:
-                self.assertNotEqual(result, caseCheck, info.errorMessage)
-        elif caseAssert == "sleep":
-            second = caseParam[0]
-            assertUntil.sleep(second)
-
-        elif caseAssert == "inputText":
-            if caseClass == "id":
-                element = Base.find_element_by_id(self, caseMethod)
-            elif caseClass == "description":
-                element = Base.find_element_by_description(self, caseMethod)
-            elif caseClass == "text":
-                element = Base.find_element_by_text(self, caseMethod)
-            elif caseClass == "xpath":
-                element = Base.find_element_by_Xpath(self, caseMethod)
-            elif caseClass == "class":
-                element = Base.find_element_by_ClassName(self, caseMethod)
-            else:
-                info.errorMessage = "参数错误"
-                return self.assertTrue(False, info.errorMessage)
-            if element is not None:
-                return Base.input_text(self, element, caseParam[0])
-            else:
-                info.errorMessage = "element 不存在！"
-                return self.assertTrue(False, info.errorMessage)
-
-        elif caseAssert == "getText":
-            if caseClass == "id":
-                element = Base.find_element_by_id(self, caseMethod)
-            elif caseClass == "description":
-                element = Base.find_element_by_description(self, caseMethod)
-            elif caseClass == "text":
-                element = Base.find_element_by_text(self, caseMethod)
-            elif caseClass == "xpath":
-                element = Base.find_element_by_Xpath(self, caseMethod)
-            elif caseClass == "class":
-                element = Base.find_element_by_ClassName(self, caseMethod)
-            else:
-                try:
-                    result = exlsUtil.getResult(caseClass, caseMethod, caseParam)
-                except:
-                    info.errorMessage = "方法执行异常。"
-                    result = False
-                if caseValuation != '' and caseValuation.startswith('para_'):
-                    info.para[caseValuation.split('_')[1]] = result
-                return self.assertTrue(result == caseCheck, info.errorMessage)
-            if element is not None:
-                value = Base.get_text(self, element)
-                if caseValuation != '' and caseValuation.startswith('para_'):
-                    info.para[caseValuation.split('_')[1]] = value
-                return self.assertEqual(value, caseCheck, "获取值：" + value + ",校验值：" + caseCheck)
-            else:
-                info.errorMessage = "element 不存在！"
-                if caseValuation != '' and caseValuation.startswith('para_'):
-                    info.para[caseValuation.split('_')[1]] = info.errorMessage
-                return self.assertTrue(False, info.errorMessage)
-
-        elif caseAssert == "swipeElement":
-            if caseClass == "id":
-                element = Base.find_element_by_id(self, caseMethod)
-            elif caseClass == "description":
-                element = Base.find_element_by_description(self, caseMethod)
-            elif caseClass == "text":
-                element = Base.find_element_by_text(self, caseMethod)
-            elif caseClass == "xpath":
-                element = Base.find_element_by_Xpath(self, caseMethod)
-            elif caseClass == "class":
-                element = Base.find_element_by_ClassName(self, caseMethod)
-            if element is not None:
-                try:
-                    step = int(caseParam[1])
-                except:
-                    step = 20
-                if caseParam[0] == "down":
-                    return element.swipe('down', steps=step)
-                elif caseParam[0] == "up":
-                    return element.swipe('up', steps=step)
-                elif caseParam[0] == "left":
-                    return element.swipe('left', steps=step)
-                elif caseParam[0] == "right":
-                    return element.swipe('right', steps=step)
-                else:
-                    info.errorMessage = "参数错误！"
-                    return self.assertTrue(False, info.errorMessage)
-            else:
-                try:
-                    step = int(caseParam[1])
-                except:
-                    step = 20
-                if caseParam[0] == "down":
-                    return PM.swipe_down(self, step)
-                elif caseParam[0] == "up":
-                    return PM.swipe_up(self, step)
-                elif caseParam[0] == "left":
-                    return PM.swipe_left(self, step)
-                elif caseParam[0] == "right":
-                    return PM.swipe_right(self, step)
-                else:
-                    info.errorMessage = "参数错误！"
-                    return self.assertTrue(False, info.errorMessage)
-
-        elif caseAssert == "clickElement":
-            if caseClass == "id":
-                element = Base.find_element_by_id(self, caseMethod)
-            elif caseClass == "description":
-                element = Base.find_element_by_description(self, caseMethod)
-            elif caseClass == "text":
-                element = Base.find_element_by_text(self, caseMethod)
-            elif caseClass == "xpath":
-                element = Base.find_element_by_Xpath(self, caseMethod)
-            elif caseClass == "class":
-                element = Base.find_element_by_ClassName(self, caseMethod)
-            if element is not None:
-                return element.click()
-            else:
-                info.errorMessage = "element 不存在！"
-                return self.assertTrue(False, info.errorMessage)
-        elif caseAssert == "compare":
-            if caseParam[0].startswith('para_'):
-                param = info.para[caseParam[0].split("_")[1]]
-            else:
-                param = caseParam[0]
-            if caseCheck.startswith('para_'):
-                checkValue = info.para[caseCheck.split("_")[1]]
-            else:
-                checkValue = caseCheck
-            return self.assertEqual(param, checkValue, info.errorMessage)
-        else:
-            info.errorMessage = "Assert 传入错误！"
-
-    @staticmethod
-    def demo_func(caseId, caseDescription, caseClass, caseMethod, caseParam, caseAssert, caseCheck, caseValuation):
-        def Func(self):
-            self.demo(caseId, caseDescription, caseClass, caseMethod, caseParam, caseAssert, caseCheck, caseValuation)
-
-        return Func
+logger = logging.getLogger("UITest.htmlParser")
+logger.setLevel(level=logging.INFO)
+formatter = logging.Formatter('%(asctime)s %(name)s-%(levelname)s: %(message)s')
+console = logging.StreamHandler()
+console.setLevel(logging.INFO)
+console.setFormatter(formatter)
+logger.addHandler(console)
+''''''
 
 
-def __generateTestCases():
-    print("__generateTestCases")
-    runList = []
-    exlsUtil = exlsTool.exlsTool()
-    allSheet = exlsUtil.allSheet
-    allSuit = exlsUtil.suitList
-    for suitKey in allSuit.keys():
-        if str(allSuit[suitKey]).lower() == "yes" and suitKey in allSheet:
-            runList.append(suitKey)
-    for runSheet in runList:
-        print("start test model : " + str(runSheet))
-        nrow = exlsUtil.caseFile.sheet_by_name(runSheet).nrows
-        for i in range(1, nrow):
-            caseId = exlsUtil.getCaseId(runSheet, i)
-            if caseId.startswith("#") or caseId == "":
-                continue
-            caseAssert = exlsUtil.getAssert(runSheet, i)
-            if caseAssert == "skip":
-                continue
-            caseDescription = exlsUtil.getCaseDescription(runSheet, i)
-            caseClass = exlsUtil.getClass(runSheet, i)
-            caseMethod = exlsUtil.getMethod(runSheet, i)
-            caseParam = exlsUtil.getParam(runSheet, i)
-            caseCheck = exlsUtil.getCheckValue(runSheet, i)
-            caseValuation = exlsUtil.getValuation(runSheet, i)
-            setattr(AVN_Test, 'test_%s_%s' % (runSheet, caseId),
-                    AVN_Test.demo_func(caseId, caseDescription, caseClass, caseMethod, caseParam, caseAssert,
-                                       caseCheck, caseValuation))
-            # 通过setattr自动为TestCase类添加成员方法，方法以“test_func_”开头
-
-
-if __name__ == "__main__":
-    try:
-        print("start")
-        # avn_device = sys.argv[1]
-        avn_device = "0a01600e82899a74"
-        # avn_device = "0908700e8289588f"
-    except:
-        print("please make sure the device!")
+def healthCheck():
+    adb = tool.adbtool()
+    if not adb.checkConnectDevcie():
+        print("请连接设备驱动。。。。")
         sys.exit(0)
-    try:
-        phone_device = sys.argv[2]
-    except:
-        pass
+    else:
+        devicelits = adb.devices()
+        imfo = os.popen('adb root').read().strip()
+        if imfo.__contains__('as root') or imfo.__contains__('already'):
+            pass
+        else:
+            print('已连设备' + devicelits[0].serial + ',root权限不足！')
+            sys.exit(0)
+    return devicelits
 
-    __generateTestCases()
-    test = unittest.TestLoader().loadTestsFromTestCase(AVN_Test)
-    load = unittest.TestSuite(test)
-    now = time.strftime("%Y%m%d_%H_%M_%S", time.localtime())
-    report_path = './Report/report_' + now + '.html'
-    print('report_path : ' + report_path)
-    fp = open(report_path, "wb")
-    runner = HTMLTestRunnerCN.HTMLTestReportCN(stream=fp, title="测试报告", tester='Tester', project='D90')
-    runner.run(load)
-    fp.close()
+
+if __name__ == '__main__':
+    parse = ArgumentParser(usage='使用简介')
+
+    # 需要运行的脚本名称
+    parse.add_argument("-file", type=str, help='运行的脚本文件名，默认Run文件', default='UITest')
+
+    # 执行语音脚本时传入的参数
+    parse.add_argument("-project", type=str, help='执行的项目名称，D90、AS23、EP21', default='D90')
+    parse.add_argument("-country", type=str, help='如果运行语音脚本，该参数默认为India，也可传参修改', default='India')
+    parse.add_argument("-module", type=str, help='执行语音脚本时，需要测试的模块,'
+                                                 '默认测试所有模块。call map   music   others radio vc'
+                                                 'nowakeup  complex open_settings System '
+                                                 '如果测试部分模块，请输入对应的数字组合。'
+                                                 '比如：测试 map，则输入：map', default='all')
+    # 执行Pcan脚本时传入的参数
+    parse.add_argument("-pdata", type=str,
+                       help='运行Pcan通信脚本时，需要传输的数据文件名，发送的数据都在文件中,该文件应该在Pconfig文件夹下的txt文件，只需传入文件名，不可为空')
+    parse.add_argument("-cycle", type=str, help='是否同时发送can信号', default='true')
+
+    # 执行性能脚本时传入的参数
+    parse.add_argument("-pack", type=str, help='获取指定应用的包名,可以不指定包名，默认获取系统整机性能信息', default="System")
+    parse.add_argument("-cpu", type=str, help='获取对应应用的CPU占比信息,默认true是获取，false时表示不获取', default="ture")
+    parse.add_argument("-mem", type=str, help='获取对应应用的内存占比信息,默认true是获取，false时表示不获取', default="ture")
+
+    #  执行UI自动化脚本传入的参数
+    parse.add_argument("-driver", type=str, help="主测设备驱动号,不可为空", default='devices')
+    parse.add_argument("-phone", type=str, help='辅助机设备驱动号，可为空，为空时默认不需要辅助机', default='')
+    parse.add_argument("-case", type=str, help='输入要测试的项目类型，TestCase中会跟据各个项目存放不同的测试case，通过该参数来调用不同的case,默认参数为D90',
+                       default="India_D90")
+    # 执行monkey脚本传入的参数
+    parse.add_argument("-whiteFile", type=str, help="执行monkey命令时涉及的白名单文件,非必须")
+    parse.add_argument("-duration", type=str, help="monkey执行脚本时每次点击间隔时间,单位ms", default="1000")
+    parse.add_argument("-times", type=str, help="moneky脚本执行总次数，默认1H，3600次", default='3600')
+
+    # 执行性能脚本传入的参数
+    parse.add_argument("-long", type=str, help="执行性能脚本的时长，默认值1000s", default='100')
+    parse.add_argument("-package", type=str, help="需要获取性能信息的包名，默认值为all，即获取系统总体的性能信息", default="all")
+
+    args = parse.parse_args()
+    devices = healthCheck()
+
+    if args.file == 'UITest':
+        # Driver = args.driver
+        # Phone = args.phone
+        case = args.case
+        if len(devices) == 0:
+            print('请连接测试设备。')
+            sys.exit(0)
+        else:
+            Driver = devices[0].serial
+        os.system('python UITest.py ' + case)
+    elif args.file == 'Voice':
+        project = args.project
+        country = args.country
+        module = args.module
+        os.system('python Voice.py ' + project + ' ' + country + ' ' + module)
+    elif args.file == 'Pcan':
+        data = args.pdata
+        cycle = args.cycle
+        if data is None:
+            print('信号文件不可为空！')
+            sys.exit(0)
+        os.system('python Pcan.py ' + data + ' ' + cycle)
+    elif args.file == 'Monkey':
+        WhiteFile = args.whiteFile
+        Duration = args.duration
+        Times = args.times
+        os.system('python Monkey.py ' + WhiteFile + " " + Duration + " " + Times)
+    elif args.file == 'Perform':
+        long = args.long
+        packag = args.package
+        os.system('python Perform.py ' + long + " " + packag)
+    else:
+        print('args [-file] is wrong!')

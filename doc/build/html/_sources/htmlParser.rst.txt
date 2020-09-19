@@ -1,0 +1,7 @@
+htmlParser module
+=================
+
+.. automodule:: htmlParser
+   :members:
+   :undoc-members:
+   :show-inheritance:

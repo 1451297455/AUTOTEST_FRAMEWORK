@@ -1,0 +1,712 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="EN" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>india_D90_gaanaPage module &mdash; Autotest 1.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="india_D90_homePage module" href="india_D90_homePage.html" />
+    <link rel="prev" title="india_D90_btPhonePage module" href="india_D90_btPhonePage.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Autotest
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">page</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="BasePage.html">BasePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configparserHandler.html">configparserHandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="factoryReset.html">factoryReset module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="homePage.html">homePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="htmlParser.html">htmlParser module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_btPhonePage.html">india_D90_btPhonePage module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">india_D90_gaanaPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_homePage.html">india_D90_homePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_morePage.html">india_D90_morePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_musicPage.html">india_D90_musicPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_radioPage.html">india_D90_radioPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_settingsPage.html">india_D90_settingsPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_userManual.html">india_D90_userManual module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_voice.html">india_D90_voice module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_weatherPage.html">india_D90_weatherPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="publicMethod.html">publicMethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_accountPage.html">thailand_AS23P_accountPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_batteryPage.html">thailand_AS23P_batteryPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_btphonePage.html">thailand_AS23P_btphonePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_callCentrePage.html">thailand_AS23P_callCentrePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_carphonePage.html">thailand_AS23P_carphonePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_folderPage.html">thailand_AS23P_folderPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_homePage.html">thailand_AS23P_homePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_inboxPage.html">thailand_AS23P_inboxPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_lifeStylePage.html">thailand_AS23P_lifeStylePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_mediaPage.html">thailand_AS23P_mediaPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_passionServicePage.html">thailand_AS23P_passionServicePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_radioPage.html">thailand_AS23P_radioPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_settingPage.html">thailand_AS23P_settingPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_translate.html">thailand_AS23P_translate module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Autotest</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">page</a> &raquo;</li>
+        
+      <li>india_D90_gaanaPage module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/india_D90_gaanaPage.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-india_D90_gaanaPage">
+<span id="india-d90-gaanapage-module"></span><h1>india_D90_gaanaPage module<a class="headerlink" href="#module-india_D90_gaanaPage" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage">
+<em class="property">class </em><code class="sig-prename descclassname">india_D90_gaanaPage.</code><code class="sig-name descname">india_D90_gaanaPage</code><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">page.BasePage.BasePage</span></code></p>
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.checkIsLogin">
+<code class="sig-name descname">checkIsLogin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.checkIsLogin" title="Permalink to this definition">¶</a></dt>
+<dd><p>检查未登录时弹出的话术框（检测SignUp按键，如果有SignUp按键则已登录，返回True）
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.checkSongIsPause">
+<code class="sig-name descname">checkSongIsPause</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.checkSongIsPause" title="Permalink to this definition">¶</a></dt>
+<dd><p>校验歌曲是否处于暂停状态（根据播放时间判断是否处于暂停状态）
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.checkSongIsPlaying">
+<code class="sig-name descname">checkSongIsPlaying</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.checkSongIsPlaying" title="Permalink to this definition">¶</a></dt>
+<dd><p>校验歌曲是否处于播放状态（根据播放时间判断是否处于播放状态）
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.choose2G">
+<code class="sig-name descname">choose2G</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.choose2G" title="Permalink to this definition">¶</a></dt>
+<dd><p>选择Download over中的2G模式
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.choose3G">
+<code class="sig-name descname">choose3G</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.choose3G" title="Permalink to this definition">¶</a></dt>
+<dd><p>选择Download over中的3G模式
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.chooseAuto">
+<code class="sig-name descname">chooseAuto</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.chooseAuto" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击Auto质量
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.chooseAutomaticAtSunset">
+<code class="sig-name descname">chooseAutomaticAtSunset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.chooseAutomaticAtSunset" title="Permalink to this definition">¶</a></dt>
+<dd><p>选择NightMode下拉列表AutomaticAtSunset
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.chooseGaanaItems">
+<code class="sig-name descname">chooseGaanaItems</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">number</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.chooseGaanaItems" title="Permalink to this definition">¶</a></dt>
+<dd><p>选择Gaana音乐页面中的栏目并播放
+:param name: 传入栏目名称
+:param number: 子栏目序号
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.chooseHigh">
+<code class="sig-name descname">chooseHigh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.chooseHigh" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击High质量
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.chooseHighDefinition">
+<code class="sig-name descname">chooseHighDefinition</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.chooseHighDefinition" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击High Definition质量
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.chooseLow">
+<code class="sig-name descname">chooseLow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.chooseLow" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击Low质量
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.chooseMailToLogin">
+<code class="sig-name descname">chooseMailToLogin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.chooseMailToLogin" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击选择邮箱登录方式
+:return:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.chooseMedium">
+<code class="sig-name descname">chooseMedium</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.chooseMedium" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击Medium质量
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.chooseOff">
+<code class="sig-name descname">chooseOff</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.chooseOff" title="Permalink to this definition">¶</a></dt>
+<dd><p>选择NightMode下拉列表Off
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.chooseOn">
+<code class="sig-name descname">chooseOn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.chooseOn" title="Permalink to this definition">¶</a></dt>
+<dd><p>选择NightMode下拉列表On
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.choosePhoneNumberToLogin">
+<code class="sig-name descname">choosePhoneNumberToLogin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.choosePhoneNumberToLogin" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击选择PhoneNumber登录方式
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.chooseSongLanguageByName">
+<code class="sig-name descname">chooseSongLanguageByName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.chooseSongLanguageByName" title="Permalink to this definition">¶</a></dt>
+<dd><p>根据传入名称选择歌曲语言（
+:param name: 例如：Hindi、English等）
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.chooseWifi">
+<code class="sig-name descname">chooseWifi</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.chooseWifi" title="Permalink to this definition">¶</a></dt>
+<dd><p>选择Download over中的wifi模式
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickAutoPlayButton">
+<code class="sig-name descname">clickAutoPlayButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickAutoPlayButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击PlayBack Setting页面中的Auto Play开关
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickBackToLastPage">
+<code class="sig-name descname">clickBackToLastPage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickBackToLastPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击左上角返回按键返回至Setting页面（用于gaana菜单中的返回按键）
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickBackToLastPageInDisplayLanguage">
+<code class="sig-name descname">clickBackToLastPageInDisplayLanguage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickBackToLastPageInDisplayLanguage" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击DisplayLanguage页面中的返回按键（该方法只用于DisplayLanguage）
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickContinue">
+<code class="sig-name descname">clickContinue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickContinue" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击Continue按键确认已经选择的音乐项
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickContinueInDisplayLanguage">
+<code class="sig-name descname">clickContinueInDisplayLanguage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickContinueInDisplayLanguage" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击DisplayLanguage页面中的Continue
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickDataSaveModeButton">
+<code class="sig-name descname">clickDataSaveModeButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickDataSaveModeButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击PlayBack Setting页面中的Data Save Mode开关
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickDisplayLanguage">
+<code class="sig-name descname">clickDisplayLanguage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickDisplayLanguage" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击进入DisplayLanguage页面
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickFavoriteButton">
+<code class="sig-name descname">clickFavoriteButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickFavoriteButton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaAddPlayList">
+<code class="sig-name descname">clickGaanaAddPlayList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaAddPlayList" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击gaana AddPlayList按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaBackButton">
+<code class="sig-name descname">clickGaanaBackButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaBackButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击返回上一页按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaDownload">
+<code class="sig-name descname">clickGaanaDownload</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaDownload" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击gaana Download按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaFavButton">
+<code class="sig-name descname">clickGaanaFavButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaFavButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击gaana FavButton按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaHome">
+<code class="sig-name descname">clickGaanaHome</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaHome" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击进入gaana Home列表
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaLeftAPPTheme">
+<code class="sig-name descname">clickGaanaLeftAPPTheme</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaLeftAPPTheme" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击进入gaana gaanaLeftTheme按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaLeftDispLanguage">
+<code class="sig-name descname">clickGaanaLeftDispLanguage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaLeftDispLanguage" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击进入gaana LeftDispLanguage按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaLeftMenuSetting">
+<code class="sig-name descname">clickGaanaLeftMenuSetting</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaLeftMenuSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击进入gaana LeftMenuSetting按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaLeftSongLanguage">
+<code class="sig-name descname">clickGaanaLeftSongLanguage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaLeftSongLanguage" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击进入gaana LeftSongLanguage按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaLoginButton">
+<code class="sig-name descname">clickGaanaLoginButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaLoginButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击进入gaana LoginButton按键跳转登录
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaMenuLayout">
+<code class="sig-name descname">clickGaanaMenuLayout</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaMenuLayout" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击进入gaana MenuLayout
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaMyMusic">
+<code class="sig-name descname">clickGaanaMyMusic</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaMyMusic" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击进入gaana MyMusic列表
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaNext">
+<code class="sig-name descname">clickGaanaNext</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaNext" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击gaana Next一曲
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaParentLayout">
+<code class="sig-name descname">clickGaanaParentLayout</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">number</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaParentLayout" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击进入gaana Parent列表
+:param number: 传入需要点击的列表序号：1、2或3等
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaPlay">
+<code class="sig-name descname">clickGaanaPlay</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaPlay" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击进入gaana Play
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaPre">
+<code class="sig-name descname">clickGaanaPre</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaPre" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击gaana Pre一曲
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaQueue">
+<code class="sig-name descname">clickGaanaQueue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaQueue" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击gaana Queue按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaRadio">
+<code class="sig-name descname">clickGaanaRadio</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaRadio" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击进入gaana Radio列表
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaRepeat">
+<code class="sig-name descname">clickGaanaRepeat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaRepeat" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击gaana Repeat
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaSearch">
+<code class="sig-name descname">clickGaanaSearch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaSearch" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击进入gaana Search列表
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaSearchButton">
+<code class="sig-name descname">clickGaanaSearchButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaSearchButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击进入gaana SearchButton列表
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaSettingButton">
+<code class="sig-name descname">clickGaanaSettingButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaSettingButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击进入gaana SettingButton列表
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaSwitchThemeButton">
+<code class="sig-name descname">clickGaanaSwitchThemeButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickGaanaSwitchThemeButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击进入gaana SwitchTheme按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickHighResolutionSpinner">
+<code class="sig-name descname">clickHighResolutionSpinner</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickHighResolutionSpinner" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击PlayBack Setting页面中Download over下拉列表
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickLogOutButton">
+<code class="sig-name descname">clickLogOutButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickLogOutButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击logout登出按键
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickMailContinueButton">
+<code class="sig-name descname">clickMailContinueButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickMailContinueButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击确认登录（邮箱登录方式）
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickNightModeSpinner">
+<code class="sig-name descname">clickNightModeSpinner</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickNightModeSpinner" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击Setting列表中NightMode下拉列表
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickOK">
+<code class="sig-name descname">clickOK</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickOK" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击ok按键(根据匹配OK文本内容的按键，用于点击弹框的OK按键)
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickOTPButton">
+<code class="sig-name descname">clickOTPButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickOTPButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击确认登录（电话号码登录方式）</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickPlaybackSettings">
+<code class="sig-name descname">clickPlaybackSettings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickPlaybackSettings" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击进入Playback Settings页面
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickRestrictButton">
+<code class="sig-name descname">clickRestrictButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickRestrictButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击PlayBack Setting页面中的Resitrict开关
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickSkipButton">
+<code class="sig-name descname">clickSkipButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickSkipButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击登录页面中Skip按键跳出登录
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickSongLanguage">
+<code class="sig-name descname">clickSongLanguage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickSongLanguage" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击Setting页面中的SongLanguage
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickSongQualitySpinner">
+<code class="sig-name descname">clickSongQualitySpinner</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickSongQualitySpinner" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击打开音频质量下拉列表
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.clickTrendingByName">
+<code class="sig-name descname">clickTrendingByName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.clickTrendingByName" title="Permalink to this definition">¶</a></dt>
+<dd><p>根据名称查找Search页面中默认搜索项内容
+:param name: Kedarnath此类Gaana现有搜索关键词
+:return:True点击成功，False无此项内容，无法点击</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.getCurrentSongName">
+<code class="sig-name descname">getCurrentSongName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.getCurrentSongName" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取歌曲名称（用于比较切歌后是否歌曲切换）
+:return: 返回歌曲名称</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.getGaanaSwitchThemeName">
+<code class="sig-name descname">getGaanaSwitchThemeName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.getGaanaSwitchThemeName" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取Gaana当前皮肤名称
+:return: 返回皮肤名称</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.inputEmailText">
+<code class="sig-name descname">inputEmailText</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.inputEmailText" title="Permalink to this definition">¶</a></dt>
+<dd><p>搜索输入框输入文本（输入邮箱）
+:param text: 输入邮箱地址
+:return: True传入成功，False传入失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_gaanaPage.india_D90_gaanaPage.inputPhoneNumberText">
+<code class="sig-name descname">inputPhoneNumberText</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_gaanaPage.india_D90_gaanaPage.inputPhoneNumberText" title="Permalink to this definition">¶</a></dt>
+<dd><p>搜索输入框输入文本（输入电话号码）
+:param text: 输入电话号码
+:return: True传入成功，False传入失败</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="india_D90_homePage.html" class="btn btn-neutral float-right" title="india_D90_homePage module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="india_D90_btPhonePage.html" class="btn btn-neutral float-left" title="india_D90_btPhonePage module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, chao
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+BasePage module
+===============
+
+.. automodule:: BasePage
+   :members:
+   :undoc-members:
+   :show-inheritance:

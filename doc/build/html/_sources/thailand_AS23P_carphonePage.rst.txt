@@ -1,0 +1,7 @@
+thailand\_AS23P\_carphonePage module
+====================================
+
+.. automodule:: thailand_AS23P_carphonePage
+   :members:
+   :undoc-members:
+   :show-inheritance:

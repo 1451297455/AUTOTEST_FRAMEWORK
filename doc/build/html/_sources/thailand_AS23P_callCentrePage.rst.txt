@@ -1,0 +1,7 @@
+thailand\_AS23P\_callCentrePage module
+======================================
+
+.. automodule:: thailand_AS23P_callCentrePage
+   :members:
+   :undoc-members:
+   :show-inheritance:

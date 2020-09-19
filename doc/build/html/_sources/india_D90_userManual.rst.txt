@@ -1,0 +1,7 @@
+india\_D90\_userManual module
+=============================
+
+.. automodule:: india_D90_userManual
+   :members:
+   :undoc-members:
+   :show-inheritance:

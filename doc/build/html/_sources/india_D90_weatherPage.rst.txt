@@ -1,0 +1,7 @@
+india\_D90\_weatherPage module
+==============================
+
+.. automodule:: india_D90_weatherPage
+   :members:
+   :undoc-members:
+   :show-inheritance:

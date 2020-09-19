@@ -1,0 +1,406 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="EN" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>homePage module &mdash; Autotest 1.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="htmlParser module" href="htmlParser.html" />
+    <link rel="prev" title="factoryReset module" href="factoryReset.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Autotest
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">page</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="BasePage.html">BasePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configparserHandler.html">configparserHandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="factoryReset.html">factoryReset module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">homePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="htmlParser.html">htmlParser module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_btPhonePage.html">india_D90_btPhonePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_gaanaPage.html">india_D90_gaanaPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_homePage.html">india_D90_homePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_morePage.html">india_D90_morePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_musicPage.html">india_D90_musicPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_radioPage.html">india_D90_radioPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_settingsPage.html">india_D90_settingsPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_userManual.html">india_D90_userManual module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_voice.html">india_D90_voice module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_weatherPage.html">india_D90_weatherPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="publicMethod.html">publicMethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_accountPage.html">thailand_AS23P_accountPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_batteryPage.html">thailand_AS23P_batteryPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_btphonePage.html">thailand_AS23P_btphonePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_callCentrePage.html">thailand_AS23P_callCentrePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_carphonePage.html">thailand_AS23P_carphonePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_folderPage.html">thailand_AS23P_folderPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_homePage.html">thailand_AS23P_homePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_inboxPage.html">thailand_AS23P_inboxPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_lifeStylePage.html">thailand_AS23P_lifeStylePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_mediaPage.html">thailand_AS23P_mediaPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_passionServicePage.html">thailand_AS23P_passionServicePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_radioPage.html">thailand_AS23P_radioPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_settingPage.html">thailand_AS23P_settingPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_translate.html">thailand_AS23P_translate module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Autotest</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">page</a> &raquo;</li>
+        
+      <li>homePage module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/homePage.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-homePage">
+<span id="homepage-module"></span><h1>homePage module<a class="headerlink" href="#module-homePage" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="homePage.homePage">
+<em class="property">class </em><code class="sig-prename descclassname">homePage.</code><code class="sig-name descname">homePage</code><a class="headerlink" href="#homePage.homePage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">page.BasePage.BasePage</span></code></p>
+<dl class="py method">
+<dt id="homePage.homePage.clickBT_Phone">
+<code class="sig-name descname">clickBT_Phone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickBT_Phone" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickEV_BATTERY">
+<code class="sig-name descname">clickEV_BATTERY</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickEV_BATTERY" title="Permalink to this definition">¶</a></dt>
+<dd><p>click homePage Weather button
+:return:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickFolder">
+<code class="sig-name descname">clickFolder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickFolder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickHome">
+<code class="sig-name descname">clickHome</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickHome" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickICall">
+<code class="sig-name descname">clickICall</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickICall" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickInbox">
+<code class="sig-name descname">clickInbox</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickInbox" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickLock">
+<code class="sig-name descname">clickLock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickLock" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickMG">
+<code class="sig-name descname">clickMG</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickMG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickMusicIcon">
+<code class="sig-name descname">clickMusicIcon</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickMusicIcon" title="Permalink to this definition">¶</a></dt>
+<dd><p>click homePage music Icon
+:return:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickMusicNextSong">
+<code class="sig-name descname">clickMusicNextSong</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickMusicNextSong" title="Permalink to this definition">¶</a></dt>
+<dd><p>click homePage next song button
+:return:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickMusicPause">
+<code class="sig-name descname">clickMusicPause</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickMusicPause" title="Permalink to this definition">¶</a></dt>
+<dd><p>click homePage music pause Button
+:return:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickMusicpreviousSong">
+<code class="sig-name descname">clickMusicpreviousSong</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickMusicpreviousSong" title="Permalink to this definition">¶</a></dt>
+<dd><p>click homePage previous song button
+:return:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickNav">
+<code class="sig-name descname">clickNav</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickNav" title="Permalink to this definition">¶</a></dt>
+<dd><p>click home page Navi button
+:return:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickNavIcon">
+<code class="sig-name descname">clickNavIcon</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickNavIcon" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickNaviCard">
+<code class="sig-name descname">clickNaviCard</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickNaviCard" title="Permalink to this definition">¶</a></dt>
+<dd><p>click homePage navi_card
+:return:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickRadio">
+<code class="sig-name descname">clickRadio</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickRadio" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickSaicAccount">
+<code class="sig-name descname">clickSaicAccount</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickSaicAccount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickSearch">
+<code class="sig-name descname">clickSearch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickSearch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickSetting">
+<code class="sig-name descname">clickSetting</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickSetting" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickUserCard">
+<code class="sig-name descname">clickUserCard</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickUserCard" title="Permalink to this definition">¶</a></dt>
+<dd><p>click homePage UserCard
+:return:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickUserIcon">
+<code class="sig-name descname">clickUserIcon</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickUserIcon" title="Permalink to this definition">¶</a></dt>
+<dd><p>click homePage UserIcon
+:return:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickVR">
+<code class="sig-name descname">clickVR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickVR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickVehicle">
+<code class="sig-name descname">clickVehicle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickVehicle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickVehicleSettingIcon">
+<code class="sig-name descname">clickVehicleSettingIcon</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickVehicleSettingIcon" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.clickWeather">
+<code class="sig-name descname">clickWeather</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.clickWeather" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.getText">
+<code class="sig-name descname">getText</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.getText" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="homePage.homePage.inputPlace">
+<code class="sig-name descname">inputPlace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">place</span></em><span class="sig-paren">)</span><a class="headerlink" href="#homePage.homePage.inputPlace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="htmlParser.html" class="btn btn-neutral float-right" title="htmlParser module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="factoryReset.html" class="btn btn-neutral float-left" title="factoryReset module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, chao
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

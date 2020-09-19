@@ -1,0 +1,7 @@
+thailand\_AS23P\_passionServicePage module
+==========================================
+
+.. automodule:: thailand_AS23P_passionServicePage
+   :members:
+   :undoc-members:
+   :show-inheritance:

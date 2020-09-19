@@ -1,0 +1,589 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="EN" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>india_D90_weatherPage module &mdash; Autotest 1.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="publicMethod module" href="publicMethod.html" />
+    <link rel="prev" title="india_D90_voice module" href="india_D90_voice.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Autotest
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">page</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="BasePage.html">BasePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configparserHandler.html">configparserHandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="factoryReset.html">factoryReset module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="homePage.html">homePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="htmlParser.html">htmlParser module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_btPhonePage.html">india_D90_btPhonePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_gaanaPage.html">india_D90_gaanaPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_homePage.html">india_D90_homePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_morePage.html">india_D90_morePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_musicPage.html">india_D90_musicPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_radioPage.html">india_D90_radioPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_settingsPage.html">india_D90_settingsPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_userManual.html">india_D90_userManual module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_voice.html">india_D90_voice module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">india_D90_weatherPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="publicMethod.html">publicMethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_accountPage.html">thailand_AS23P_accountPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_batteryPage.html">thailand_AS23P_batteryPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_btphonePage.html">thailand_AS23P_btphonePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_callCentrePage.html">thailand_AS23P_callCentrePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_carphonePage.html">thailand_AS23P_carphonePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_folderPage.html">thailand_AS23P_folderPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_homePage.html">thailand_AS23P_homePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_inboxPage.html">thailand_AS23P_inboxPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_lifeStylePage.html">thailand_AS23P_lifeStylePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_mediaPage.html">thailand_AS23P_mediaPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_passionServicePage.html">thailand_AS23P_passionServicePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_radioPage.html">thailand_AS23P_radioPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_settingPage.html">thailand_AS23P_settingPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_translate.html">thailand_AS23P_translate module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Autotest</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">page</a> &raquo;</li>
+        
+      <li>india_D90_weatherPage module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/india_D90_weatherPage.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-india_D90_weatherPage">
+<span id="india-d90-weatherpage-module"></span><h1>india_D90_weatherPage module<a class="headerlink" href="#module-india_D90_weatherPage" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="india_D90_weatherPage.india_D90_weatherPage">
+<em class="property">class </em><code class="sig-prename descclassname">india_D90_weatherPage.</code><code class="sig-name descname">india_D90_weatherPage</code><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">page.BasePage.BasePage</span></code></p>
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.calculateRefreshTime">
+<code class="sig-name descname">calculateRefreshTime</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">times_str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.calculateRefreshTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>检验60分钟刷新时间是否正确</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.changeTemperatureTypeToC">
+<code class="sig-name descname">changeTemperatureTypeToC</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.changeTemperatureTypeToC" title="Permalink to this definition">¶</a></dt>
+<dd><p>进入设置天气单位C后检查是否生效
+:return: True正确，False错误</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.changeTemperatureTypeToF">
+<code class="sig-name descname">changeTemperatureTypeToF</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.changeTemperatureTypeToF" title="Permalink to this definition">¶</a></dt>
+<dd><p>进入设置天气单位F后检查是否生效
+:return: True正确，False错误</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.checkCloseWeatherWarning">
+<code class="sig-name descname">checkCloseWeatherWarning</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.checkCloseWeatherWarning" title="Permalink to this definition">¶</a></dt>
+<dd><p>检查天气预警关闭状态是否异常
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.checkDefaultCityWeather">
+<code class="sig-name descname">checkDefaultCityWeather</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cityName</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.checkDefaultCityWeather" title="Permalink to this definition">¶</a></dt>
+<dd><p>查看默认地区天气情况
+:param cityName: 城市名称
+:return: True正确，False错误</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.checkIndiaCityName">
+<code class="sig-name descname">checkIndiaCityName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.checkIndiaCityName" title="Permalink to this definition">¶</a></dt>
+<dd><p>查看5个默认地区天气情况
+:return: True正确，False错误</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.checkOpenWeatherWarning">
+<code class="sig-name descname">checkOpenWeatherWarning</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.checkOpenWeatherWarning" title="Permalink to this definition">¶</a></dt>
+<dd><p>检查天气预警打开状态是否异常
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.checkRefreshTime">
+<code class="sig-name descname">checkRefreshTime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.checkRefreshTime" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>无</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.checkTimeFormat">
+<code class="sig-name descname">checkTimeFormat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.checkTimeFormat" title="Permalink to this definition">¶</a></dt>
+<dd><p>检验时间格式
+:return: True时间格式正确，False时间格式错误</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.checkWeather5Day">
+<code class="sig-name descname">checkWeather5Day</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.checkWeather5Day" title="Permalink to this definition">¶</a></dt>
+<dd><p>检查5天天气日期排序是否正确
+:return: True正确，False错误</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.checkWeatherLocationInHomePageIsNotNone">
+<code class="sig-name descname">checkWeatherLocationInHomePageIsNotNone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.checkWeatherLocationInHomePageIsNotNone" title="Permalink to this definition">¶</a></dt>
+<dd><p>判断车机首页天气是否为空
+:return: True地址非空，False地址为空</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.checkWeatherSettingIsDefault">
+<code class="sig-name descname">checkWeatherSettingIsDefault</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.checkWeatherSettingIsDefault" title="Permalink to this definition">¶</a></dt>
+<dd><p>检查当前天气Setting页面是否是默认状态
+:return: True默认状态，False非默认状态或者是天气单位元素不全</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.chooseImperial">
+<code class="sig-name descname">chooseImperial</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.chooseImperial" title="Permalink to this definition">¶</a></dt>
+<dd><p>选择英制
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.chooseMetric">
+<code class="sig-name descname">chooseMetric</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.chooseMetric" title="Permalink to this definition">¶</a></dt>
+<dd><p>选择公制
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.chooseTemperatureC">
+<code class="sig-name descname">chooseTemperatureC</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.chooseTemperatureC" title="Permalink to this definition">¶</a></dt>
+<dd><p>选择摄氏度
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.chooseTemperatureF">
+<code class="sig-name descname">chooseTemperatureF</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.chooseTemperatureF" title="Permalink to this definition">¶</a></dt>
+<dd><p>选择华氏
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.clickBackButton">
+<code class="sig-name descname">clickBackButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.clickBackButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>回到上一层天气目录
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.clickBroadCastButton">
+<code class="sig-name descname">clickBroadCastButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.clickBroadCastButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击Weather BroadCast Button
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.clickDefaultCity">
+<code class="sig-name descname">clickDefaultCity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.clickDefaultCity" title="Permalink to this definition">¶</a></dt>
+<dd><p>根据城市名称查询当前页面中是否存在该城市名称
+:param text: 城市名称
+:return: True存在，False不存在</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.clickLocalPosition">
+<code class="sig-name descname">clickLocalPosition</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.clickLocalPosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击获取当前地点天气(Weather搜索页面定位车机位置图标)
+:return:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.clickPositionSearch">
+<code class="sig-name descname">clickPositionSearch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.clickPositionSearch" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击搜索页面搜索按钮
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.clickRefresh">
+<code class="sig-name descname">clickRefresh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.clickRefresh" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击刷新天气页面
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.clickSetting">
+<code class="sig-name descname">clickSetting</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.clickSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击天气设置页面
+:return:  True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.clickWeatherSearch">
+<code class="sig-name descname">clickWeatherSearch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.clickWeatherSearch" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击搜索天气页面
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.closeWeatherBroadcastButton">
+<code class="sig-name descname">closeWeatherBroadcastButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.closeWeatherBroadcastButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击关闭WeatherBroadcastButton
+:return: True关闭成功，False关闭失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.closeWeatherWarning">
+<code class="sig-name descname">closeWeatherWarning</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.closeWeatherWarning" title="Permalink to this definition">¶</a></dt>
+<dd><p>关闭天气预警按钮
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.compareWeather">
+<code class="sig-name descname">compareWeather</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.compareWeather" title="Permalink to this definition">¶</a></dt>
+<dd><p>比较天气详情页面和首页天气是否信息一致
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.getAlarmStatus">
+<code class="sig-name descname">getAlarmStatus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.getAlarmStatus" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取当前Weather Alarm状态
+:return: On ，Off</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.getBroadCastStatus">
+<code class="sig-name descname">getBroadCastStatus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.getBroadCastStatus" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取当前Weather Broadcast状态
+:return: On ，Off</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.getCityNameInWeatherPage">
+<code class="sig-name descname">getCityNameInWeatherPage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.getCityNameInWeatherPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取天气页面定位城市名称
+:return: 天气页面定位城市名称</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.getHomeWeatherLocation">
+<code class="sig-name descname">getHomeWeatherLocation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.getHomeWeatherLocation" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取主页天气的定位
+:return: 返回地名，False当前不是Home主页页面</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.getInputSearchText">
+<code class="sig-name descname">getInputSearchText</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.getInputSearchText" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取输入框中的字符串
+:return: 返回输入框内字符串</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.getLocationTemperatureUnit">
+<code class="sig-name descname">getLocationTemperatureUnit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.getLocationTemperatureUnit" title="Permalink to this definition">¶</a></dt>
+<dd><p>返回天气详情页面中天气单位
+:return: ℃摄氏度、℉华氏度</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.getRefreshtime">
+<code class="sig-name descname">getRefreshtime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.getRefreshtime" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击刷新时间
+:return: True刷新成功，False刷新失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.getWeatherLocation">
+<code class="sig-name descname">getWeatherLocation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.getWeatherLocation" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取首页定位信息
+:return: 返回字符串</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.getWeatherPageTemperature">
+<code class="sig-name descname">getWeatherPageTemperature</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.getWeatherPageTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取天气页面温度值
+:return: 返回温度值</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.gotoWeatherPage">
+<code class="sig-name descname">gotoWeatherPage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.gotoWeatherPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>进入天气app
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.inputSearchText">
+<code class="sig-name descname">inputSearchText</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.inputSearchText" title="Permalink to this definition">¶</a></dt>
+<dd><p>搜索输入框输入文本
+:return: True传入成功，False传入失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.inputSpecialText">
+<code class="sig-name descname">inputSpecialText</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.inputSpecialText" title="Permalink to this definition">¶</a></dt>
+<dd><p>搜索框输入框输入特殊字符
+:param text: 输入字符
+:return: True传入成功，False传入失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.isWeakNetwork">
+<code class="sig-name descname">isWeakNetwork</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.isWeakNetwork" title="Permalink to this definition">¶</a></dt>
+<dd><p>弱网Toast提示框内容判断 弱网情况下返回True
+:return:True弱网，False网络正常</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.openWeatherBroadcastButton">
+<code class="sig-name descname">openWeatherBroadcastButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.openWeatherBroadcastButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击打开WeatherBroadcastButton
+:return: True打开成功，False打开失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.openWeatherWarning">
+<code class="sig-name descname">openWeatherWarning</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.openWeatherWarning" title="Permalink to this definition">¶</a></dt>
+<dd><p>打开天气预警按钮
+:return: True点击成功，False点击失败</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.searchCityByCityName">
+<code class="sig-name descname">searchCityByCityName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cityName</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.searchCityByCityName" title="Permalink to this definition">¶</a></dt>
+<dd><p>天气页面输入地区名称搜索当地天气
+:param cityName:
+:return: True地区存在，False地区不存在</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.swipeToSettingBeginning">
+<code class="sig-name descname">swipeToSettingBeginning</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.swipeToSettingBeginning" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动至Setting页面顶部</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.swipeToSettingEnding">
+<code class="sig-name descname">swipeToSettingEnding</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.swipeToSettingEnding" title="Permalink to this definition">¶</a></dt>
+<dd><p>滑动至Setting页面顶部</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.waitWeatherRefresh">
+<code class="sig-name descname">waitWeatherRefresh</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">times</span></em><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.waitWeatherRefresh" title="Permalink to this definition">¶</a></dt>
+<dd><p>传入时间（秒）等待，该方法用于等待天气刷新
+:return: True刷新前后定位不同，False刷新前后定位相同</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.weatherPageChangeTo360Page100Times">
+<code class="sig-name descname">weatherPageChangeTo360Page100Times</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.weatherPageChangeTo360Page100Times" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="india_D90_weatherPage.india_D90_weatherPage.weatherPageChangeToNaviPage100Times">
+<code class="sig-name descname">weatherPageChangeToNaviPage100Times</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#india_D90_weatherPage.india_D90_weatherPage.weatherPageChangeToNaviPage100Times" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="publicMethod.html" class="btn btn-neutral float-right" title="publicMethod module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="india_D90_voice.html" class="btn btn-neutral float-left" title="india_D90_voice module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, chao
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

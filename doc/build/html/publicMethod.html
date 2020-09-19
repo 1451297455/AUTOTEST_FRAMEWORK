@@ -1,0 +1,553 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="EN" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>publicMethod module &mdash; Autotest 1.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="thailand_AS23P_accountPage module" href="thailand_AS23P_accountPage.html" />
+    <link rel="prev" title="india_D90_weatherPage module" href="india_D90_weatherPage.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Autotest
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">page</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="BasePage.html">BasePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configparserHandler.html">configparserHandler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="factoryReset.html">factoryReset module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="homePage.html">homePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="htmlParser.html">htmlParser module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_btPhonePage.html">india_D90_btPhonePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_gaanaPage.html">india_D90_gaanaPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_homePage.html">india_D90_homePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_morePage.html">india_D90_morePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_musicPage.html">india_D90_musicPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_radioPage.html">india_D90_radioPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_settingsPage.html">india_D90_settingsPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_userManual.html">india_D90_userManual module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_voice.html">india_D90_voice module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="india_D90_weatherPage.html">india_D90_weatherPage module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">publicMethod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_accountPage.html">thailand_AS23P_accountPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_batteryPage.html">thailand_AS23P_batteryPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_btphonePage.html">thailand_AS23P_btphonePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_callCentrePage.html">thailand_AS23P_callCentrePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_carphonePage.html">thailand_AS23P_carphonePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_folderPage.html">thailand_AS23P_folderPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_homePage.html">thailand_AS23P_homePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_inboxPage.html">thailand_AS23P_inboxPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_lifeStylePage.html">thailand_AS23P_lifeStylePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_mediaPage.html">thailand_AS23P_mediaPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_passionServicePage.html">thailand_AS23P_passionServicePage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_radioPage.html">thailand_AS23P_radioPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_settingPage.html">thailand_AS23P_settingPage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thailand_AS23P_translate.html">thailand_AS23P_translate module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Autotest</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">page</a> &raquo;</li>
+        
+      <li>publicMethod module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/publicMethod.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-publicMethod">
+<span id="publicmethod-module"></span><h1>publicMethod module<a class="headerlink" href="#module-publicMethod" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="publicMethod.publicMethod">
+<em class="property">class </em><code class="sig-prename descclassname">publicMethod.</code><code class="sig-name descname">publicMethod</code><a class="headerlink" href="#publicMethod.publicMethod" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">page.BasePage.BasePage</span></code></p>
+<dl class="py method">
+<dt id="publicMethod.publicMethod.Home">
+<code class="sig-name descname">Home</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.Home" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击home
+点击home 键，回到主界面</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.back">
+<em class="property">classmethod </em><code class="sig-name descname">back</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.back" title="Permalink to this definition">¶</a></dt>
+<dd><p>点击返回
+页面没有加载完的时候，会出现返回失败的情况，使用前确认页面加载完成
+home, back, left, right, up, down, center, menu, search, enter,</p>
+<blockquote>
+<div><p>delete(or del), recent(recent apps), volume_up, volume_down,
+volume_mute, camera, power.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.camera">
+<em class="property">classmethod </em><code class="sig-name descname">camera</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.camera" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.center">
+<em class="property">classmethod </em><code class="sig-name descname">center</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.center" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.checkPage">
+<code class="sig-name descname">checkPage</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">activity</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.checkPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>start = time.process_time()
+time.sleep(2)
+currentAct = str(self.d.app_current().get(‘activity’))
+logging.info(currentAct)
+logging.info(activity)
+if currentAct == activity:</p>
+<blockquote>
+<div><p>result = True</p>
+</div></blockquote>
+<dl class="simple">
+<dt>else:</dt><dd><p>result = False</p>
+</dd>
+</dl>
+<p>logging.info(‘activity compare result ‘ + result)
+end = time.process_time()
+logging.info(‘Take %6.3f’ % (end - start))</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.click_by_element">
+<code class="sig-name descname">click_by_element</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">element</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.click_by_element" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.delete">
+<em class="property">classmethod </em><code class="sig-name descname">delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.delete" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.down">
+<em class="property">classmethod </em><code class="sig-name descname">down</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.down" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.enter">
+<em class="property">classmethod </em><code class="sig-name descname">enter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.enter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.find_message">
+<em class="property">static </em><code class="sig-name descname">find_message</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">elements</span></em>, <em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.find_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>查找元素列表中是否存在 text</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.get_Current_Activity">
+<code class="sig-name descname">get_Current_Activity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.get_Current_Activity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.get_text_by_element">
+<code class="sig-name descname">get_text_by_element</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">element</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.get_text_by_element" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.get_toast_message">
+<em class="property">classmethod </em><code class="sig-name descname">get_toast_message</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.get_toast_message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.identify">
+<em class="property">classmethod </em><code class="sig-name descname">identify</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.identify" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.inputText">
+<code class="sig-name descname">inputText</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">element</span></em>, <em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.inputText" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.input_text_by_adb">
+<code class="sig-name descname">input_text_by_adb</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.input_text_by_adb" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于输入框中输入特殊字符方法
+:param element: 输入框元素
+:param text: 输入字符串
+:return: True 默认成功 False输入框不存在</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.left">
+<em class="property">classmethod </em><code class="sig-name descname">left</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.left" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.menu">
+<em class="property">classmethod </em><code class="sig-name descname">menu</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.menu" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.openApp">
+<em class="property">classmethod </em><code class="sig-name descname">openApp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">package</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.openApp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.power">
+<em class="property">classmethod </em><code class="sig-name descname">power</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.power" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.pressButtenByKeyevent">
+<code class="sig-name descname">pressButtenByKeyevent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">keyevent</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.pressButtenByKeyevent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.readConfigByModuleAndKey">
+<code class="sig-name descname">readConfigByModuleAndKey</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">project</span></em>, <em class="sig-param"><span class="n">module</span></em>, <em class="sig-param"><span class="n">key</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.readConfigByModuleAndKey" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.readConfigItemsByModule">
+<code class="sig-name descname">readConfigItemsByModule</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">project</span></em>, <em class="sig-param"><span class="n">module</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.readConfigItemsByModule" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.recent">
+<em class="property">classmethod </em><code class="sig-name descname">recent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.recent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.right">
+<em class="property">classmethod </em><code class="sig-name descname">right</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.right" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.search">
+<em class="property">classmethod </em><code class="sig-name descname">search</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.search" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.set_fastinput_ime">
+<em class="property">classmethod </em><code class="sig-name descname">set_fastinput_ime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.set_fastinput_ime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.set_original_ime">
+<em class="property">classmethod </em><code class="sig-name descname">set_original_ime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.set_original_ime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.stopApp">
+<em class="property">classmethod </em><code class="sig-name descname">stopApp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">package</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.stopApp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.swipe_backto_description">
+<code class="sig-name descname">swipe_backto_description</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.swipe_backto_description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.swipe_down">
+<code class="sig-name descname">swipe_down</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">count</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.swipe_down" title="Permalink to this definition">¶</a></dt>
+<dd><p>swipe down
+:param element: UI element, if None while swipe window of phone
+:param steps: steps of swipe for Android, The lower the faster
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.swipe_down_by_element">
+<code class="sig-name descname">swipe_down_by_element</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">element</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.swipe_down_by_element" title="Permalink to this definition">¶</a></dt>
+<dd><p>swipe down
+:param element: UI element, if None while swipe window of phone
+:param steps: steps of swipe for Android, The lower the faster
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.swipe_forwardto_description">
+<code class="sig-name descname">swipe_forwardto_description</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.swipe_forwardto_description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.swipe_left">
+<code class="sig-name descname">swipe_left</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">count</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.swipe_left" title="Permalink to this definition">¶</a></dt>
+<dd><p>swipe left
+:param count: swipe times,default once
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.swipe_left_by_element">
+<code class="sig-name descname">swipe_left_by_element</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">element</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.swipe_left_by_element" title="Permalink to this definition">¶</a></dt>
+<dd><p>swipe left
+:param element: UI element, if None while swipe window of phone
+:param steps: steps of swipe for Android, The lower the faster
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.swipe_right">
+<code class="sig-name descname">swipe_right</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">count</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.swipe_right" title="Permalink to this definition">¶</a></dt>
+<dd><p>swipe right
+:param count:
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.swipe_right_by_element">
+<code class="sig-name descname">swipe_right_by_element</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">element</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.swipe_right_by_element" title="Permalink to this definition">¶</a></dt>
+<dd><p>swipe right
+:param element: UI element, if None while swipe window of phone
+:param steps: steps of swipe for Android, The lower the faster
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.swipe_to_beginning">
+<code class="sig-name descname">swipe_to_beginning</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.swipe_to_beginning" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.swipe_to_beginning_by_id">
+<code class="sig-name descname">swipe_to_beginning_by_id</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.swipe_to_beginning_by_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.swipe_to_end">
+<code class="sig-name descname">swipe_to_end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.swipe_to_end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.swipe_to_end_by_id">
+<code class="sig-name descname">swipe_to_end_by_id</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.swipe_to_end_by_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.swipe_up">
+<code class="sig-name descname">swipe_up</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">count</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.swipe_up" title="Permalink to this definition">¶</a></dt>
+<dd><p>swipe up
+:param element: UI element, if None while swipe window of phone
+:param steps: steps of swipe for Android, The lower the faster
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.swipe_up_by_element">
+<code class="sig-name descname">swipe_up_by_element</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">element</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.swipe_up_by_element" title="Permalink to this definition">¶</a></dt>
+<dd><p>swipe up
+:param element: UI element, if None while swipe window of phone
+:param steps: steps of swipe for Android, The lower the faster
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.up">
+<em class="property">classmethod </em><code class="sig-name descname">up</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.up" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.volume_down">
+<em class="property">classmethod </em><code class="sig-name descname">volume_down</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.volume_down" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.volume_mute">
+<em class="property">classmethod </em><code class="sig-name descname">volume_mute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.volume_mute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="publicMethod.publicMethod.volume_up">
+<em class="property">classmethod </em><code class="sig-name descname">volume_up</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#publicMethod.publicMethod.volume_up" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="thailand_AS23P_accountPage.html" class="btn btn-neutral float-right" title="thailand_AS23P_accountPage module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="india_D90_weatherPage.html" class="btn btn-neutral float-left" title="india_D90_weatherPage module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, chao
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

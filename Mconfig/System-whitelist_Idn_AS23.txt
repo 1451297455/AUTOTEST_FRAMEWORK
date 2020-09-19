@@ -1,0 +1,14 @@
+com.saicmotor.settings
+com.saicmotor.voicevui
+com.saicmotor.media
+com.saicmotor.radio
+com.saicmotor.diag
+com.saicmotor.hvac
+com.saicmotor.launcher
+com.saicmotor.weathers
+com.saicmotor.btphone
+com.saicmotor.vehiclesettings
+com.saicmotor.evs
+com.saicmotor.onlinemedia
+com.saicmotor.folder
+com.telenav.app.arp
